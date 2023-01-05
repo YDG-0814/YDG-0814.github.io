@@ -49,8 +49,8 @@ function createtime() {
     let currentTimeHtml = "";
     (currentTimeHtml =
         hnum < 18 && hnum >= 9
-            ? `<span style="color: blue; ">上班摸鱼中...</span><img class='boardsign' src='/images/svg/棒棒糖.svg' title='距离月入25k也就还差一个大佬带我~' height="20"><span class='textTip'> <br> <span style="color: blue; ">小破站居然运行了</span> <span style="color: blue; ">${dnum} 天</span></span><span id='runtime'> <span style="color: blue; ">${hnum} 小时</span> <span style="color: blue; ">${mnum} 分</span> <span style="color: blue; ">${snum} 秒</span> </span> <i class='fas fa-heartbeat' style='color:red'></i>`
-            : `<span style="color: blue; ">下班休息中...</span><img class='boardsign' src='/images/svg/心跳.svg' title='距离月入25k也就还差一个大佬带我~' height="20"><span class='textTip'><br> <span style="color: blue; ">小破站居然运行了</span> <span style="color: blue; ">${dnum} 天</span></span><span id='runtime'> <span style="color: blue; ">${hnum} 小时</span> <span style="color: blue; ">${mnum} 分</span> <span style="color: blue; ">${snum} 秒</span> </span> <i class='fas fa-heartbeat' style='color:red'></i>`),
+            ? ` 上课摸鱼中🐟... <img class='boardsign' src='/images/svg/棒棒糖.svg' title='距离月入25k也就还差一个大佬带我~' height="20"><span class='textTip'> <br>  小破站居然运行了    ${dnum} 天  <span id='runtime'>  ${hnum} 小时   ${mnum} 分   ${snum} 秒    <i class='fas fa-heartbeat' style='color:red'></i>`
+            : ` 放学了冲冲冲🚲... <img class='boardsign' src='/images/svg/心跳.svg' title='距离月入25k也就还差一个大佬带我~' height="20"><span class='textTip'><br>  小破站居然运行了   ${dnum} 天  <span id='runtime'>  ${hnum} 小时   ${mnum} 分   ${snum} 秒    <i class='fas fa-heartbeat' style='color:red'></i>`),
     document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
 setInterval(() => {
