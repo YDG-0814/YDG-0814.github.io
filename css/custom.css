@@ -188,7 +188,7 @@
 /* 鼠标悬浮状态 */
 [data-theme="dark"] .magnet_link_context:hover {
   background: #3ecdf1;
-  color: #f2f2f2;
+  color: #3ecdf1;
 }
 
 /* 一级菜单居中 */
@@ -295,7 +295,7 @@
   border: var(--border-style);
 }
 
-/* 首页侧栏卡片 */
+/* 首页侧栏卡片颜色 */
 #aside-content .card-widget {
   background: var(--trans-light);
   backdrop-filter: var(--backdrop-filter);
@@ -370,16 +370,16 @@ svg.icon {
 
 /* tags样式 */
 #aside-content .card-tag-cloud a {
-    color: var(--anzhiyu-fontcolor) !important;
+    color: white !important;
     font-size: 1.05rem !important;
     border-radius: 8px;
     display: inline-block;
     margin-right: 4px;
 }
 #aside-content .card-tag-cloud a:hover {
-    background: var(--anzhiyu-theme);
-    color: var(--anzhiyu-white) !important;
-    box-shadow: var(--anzhiyu-shadow-theme);
+    background: white;
+    color: white !important;
+    box-shadow: white;
 }
 @media screen and (min-width: 1300px) {
     #aside-content .card-tag-cloud a:hover {
@@ -532,7 +532,7 @@ li.card-archive-list-item {
 
 /* 腾讯位置欢迎信息 */
 #welcome-info {
-    background: linear-gradient(45deg, #b9f4f3, #e3fbf9);
+    /*background: linear-gradient(45deg, #b9f4f3, #e3fbf9);*/
     border-radius: 18px;
     padding: 8px;
 }
@@ -547,9 +547,16 @@ li.card-archive-list-item {
 
 /* 侧边卡片栏宽度 */
 .aside-content {
-    max-width: 318px;
+    margin-left: -14px;
+    max-width: 330px;
     min-width: 300px;
 }
+/*目录容器的大小*/
+#card-toc.card-widget{
+    padding: 0px 5px;
+    width: 370px;
+}
+
 
 /* 平板尺寸自适应(不启用侧边栏宽度限制) */
 @media screen and (max-width: 900px) {
@@ -626,13 +633,13 @@ li.card-archive-list-item {
     background: url(https://tuchuang.voooe.cn/images/2023/01/02/snow.gif);
     background-size: cover;
 }
-/* 个人信息卡片背景图 */
-[data-theme="light"] #aside-content > .card-widget.card-info {
-    background-image: url(https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/471d6211dad2733ab9d937ae11688ad.png);
-    background-repeat: no-repeat;
-    background-attachment: inherit;
-    background-size: 110%;
-}
+/*!* 个人信息卡片背景图 *!*/
+/*[data-theme="light"] #aside-content > .card-widget.card-info {*/
+/*    background-image: url(https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/471d6211dad2733ab9d937ae11688ad.png);*/
+/*    background-repeat: no-repeat;*/
+/*    background-attachment: inherit;*/
+/*    background-size: 110%;*/
+/*}*/
 [data-theme="dark"] #aside-content > .card-widget.card-info {
     background-image: url(https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/804ac98fe0bfc933322c3ecaf76ffef.png);
     background-repeat: no-repeat;
@@ -752,44 +759,6 @@ li.card-archive-list-item {
 .rightMenu-group.hide {
     display: none;
 }
-
-/* 鼠标样式 */
-#cursor {
-    position: fixed;
-    width: 16px;
-    height: 16px;
-    /* 这里改变跟随的底色 */
-    background: rgb(57, 197, 187);
-    border-radius: 8px;
-    opacity: 0.25;
-    z-index: 10086;
-    pointer-events: none;
-    transition: 0.2s ease-in-out;
-    transition-property: background, opacity, transform;
-}
-
-#cursor.hidden {
-    opacity: 0;
-}
-
-#cursor.hover {
-    opacity: 0.1;
-    transform: scale(2.5);
-    -webkit-transform: scale(2.5);
-    -moz-transform: scale(2.5);
-    -ms-transform: scale(2.5);
-    -o-transform: scale(2.5);
-}
-
-#cursor.active {
-    opacity: 0.5;
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-}
-
 /* 文章页H1-H6图标样式效果 */
 /* 控制风车转动速度 4s那里可以自己调节快慢 */
 h1::before,

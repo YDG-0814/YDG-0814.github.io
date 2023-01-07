@@ -32,7 +32,7 @@ if (document.body.clientWidth > 992) {
                 z_index: 9999,
                 zoom: 0.9,
                 borderRadius: 5 + 'px',
-                right: 60 + 'px',
+                right: 165 + 'px',
                 // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图
                 nekoImg: "https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/77.png",
                 hoverMsg: "biubiubiu",
@@ -113,7 +113,6 @@ if (document.body.clientWidth > 992) {
                 .click(function () {
 
                     //弹窗发送成功信息
-                    btf.scrollToDest(0, 500)
                     new Vue({
                         data: function () {
                             this.$notify({
@@ -127,6 +126,7 @@ if (document.body.clientWidth > 992) {
                             });
                         }
                     })
+                    btf.scrollToDest(0, 500)
                 });
             return this;
         }
