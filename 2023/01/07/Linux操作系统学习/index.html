@@ -1,0 +1,1077 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Linux Learn | 光仔の小破站🍭</title><meta name="author" content="YDG-0814"><meta name="copyright" content="YDG-0814"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="Linux操作系统的基础学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux Learn">
+<meta property="og:url" content="https://ydg-0814.github.io/2023/01/07/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="光仔の小破站🍭">
+<meta property="og:description" content="Linux操作系统的基础学习">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/30%20(7).jpeg">
+<meta property="article:published_time" content="2023-01-06T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-01-13T16:00:00.000Z">
+<meta property="article:author" content="YDG-0814">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/30%20(7).jpeg"><link rel="shortcut icon" href="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/favicon.png"><link rel="canonical" href="https://ydg-0814.github.io/2023/01/07/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-snackbar/0.1.16/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":100,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"作者: YDG-0814","link":"链接: ","source":"来源: 光仔の小破站🍭","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Linux Learn',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-01-14 00:00:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="/css/pikaqiu.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><span id="fps"></span><link rel="stylesheet" href="/css/mouse.css"><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><div id="myscoll"></div><div class="dengl"><div class="d-box"><div class="d1"><span></span><span><p></p></span><ul><li></li><li></li><li><span></span></li><li></li><li></li></ul></div><div class="d2"><span></span><span><p></p></span><ul><li></li><li></li><li><span></span></li><li></li><li></li></ul></div></div><div class="d-box1"><div class="d1"><span></span><span><p></p></span><ul><li></li><li></li><li><span></span></li><li></li><li></li></ul></div><div class="d2"><span></span><span><p></p></span><ul><li></li><li></li><li><span></span></li><li></li><li></li></ul></div></div></div><!-- hexo injector head_end start --><link rel="stylesheet" href="https://www.fomal.cc/static/css/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="/css/progress_bar.css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"></script><div id="web_bg" style="background:url(https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/30%20(7).jpeg);background-attachment: local;background-position: center;background-size: cover;background-repeat: no-repeat;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images6.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-qingning"></use></svg><span> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shoucangwenjian"></use></svg><span> 归档</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg><span> 标签</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-zuzhijiagou"></use></svg><span> 分类</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><svg class="icon hide" aria-hidden="true"><use xlink:href="#icon-xuanxiang"></use></svg><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-yinle1"></use></svg><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shipinbofang"></use></svg><span> 视频</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/picture/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-xiangce1"></use></svg><span> 图库</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-xitonggonggao"></use></svg><span> 留言板</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shejiaotubiao-02"></use></svg><span> 朋友圈</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-bangbangtang"></use></svg><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/30%20(7).jpeg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">光仔の小破站🍭</a></span><div id="menus"></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-qingning"></use></svg><span> 首页</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shoucangwenjian"></use></svg><span> 归档</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-biaoqian"></use></svg><span> 标签</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-zuzhijiagou"></use></svg><span> 分类</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><svg class="icon hide" aria-hidden="true"><use xlink:href="#icon-xuanxiang"></use></svg><span> 娱乐</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-yinle1"></use></svg><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/movies/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shipinbofang"></use></svg><span> 视频</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/picture/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-xiangce1"></use></svg><span> 图库</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/comments/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-xitonggonggao"></use></svg><span> 留言板</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shejiaotubiao-02"></use></svg><span> 朋友圈</span></a></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-bangbangtang"></use></svg><span> 关于</span></a></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><i id='tp-weather-widget' style='color:red'></i><div id="search-button"><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="昼夜模式" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:60px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-shuijue"></use></svg></a><a class="search faa-parent animated-hover" title="搜索"><svg class="faa-tada icon" style="height:35px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Linux Learn</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-06T16:00:00.000Z" title="发表于 2023-01-07 00:00:00">2023-01-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-13T16:00:00.000Z" title="更新于 2023-01-14 00:00:00">2023-01-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Linux/">Linux</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Linux/learn/">learn</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.3w</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>42分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Linux Learn"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2023/01/07/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2023/01/07/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/" itemprop="commentCount"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="tip home"><p>Linux相关学习</p>
+<p>基于win10/win11电脑的Linux的相关学习</p>
+<p>Linux操作系统有很多个发行版本，本文章主要是基于CentOS发行版的Linux操作系统来进行Linux的学习外加上Ubuntu发行版的Linux操作系统进行辅助学习。目前CentOS发行版在国内是比较流行的，Ubuntu发行版在国外比较流行。</p>
+<p>本文的学习基于<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1n84y1i7td?p=1&amp;vd_source=73d15d6a3c5824665c87aa3c4b34c7c2">黑马程序员Linux快速入门到精通</a>，文章内容只记录了基础的Linux知识笔记(前四章)，并没有记录实战(第五章)的Linux学习笔记，目前该课程未更新完，只更新到了第五章</p>
+</div>
+<div class="note green icon-padding flat"><i class="note-icon fas fa-battery-half"></i><p>Linux操作系统的安装</p>
+</div>
+<h1 id="VMware软件安装"><a href="#VMware软件安装" class="headerlink" title="VMware软件安装"></a>VMware软件安装</h1><p>说明：VMware是一个收费软件,它有一个试用的版本(1个月),若在正式使用时,请购买正版哦。下面提供有官网下载的和百度网盘(提供了激活密钥，目前还是可以使用的）下载。</p>
+<p>注意：仅供学习用，不可商用哦！！！</p>
+<div class="tabs" id="vmware"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#vmware-1">官网下载地址</button></li><li class="tab"><button type="button" data-href="#vmware-2">百度下载地址</button></li><li class="tab"><button type="button" data-href="#vmware-3">注意事项</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="vmware-1"><p>点击<a target="_blank" rel="noopener" href="https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html">这里</a>进入VMware官网下载</p>
+<details class="folding-tag" green><summary> 点击查看图片 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108145803851.png" alt="image-20230108145803851"></p>
+              </div>
+            </details><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="vmware-2"><p>按照里面有说明文档和激活密钥进行操作就行了，win7，win10和win11都有！！！</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1JInJ2LLD-zHCkGrL1xqgiA">https://pan.baidu.com/s/1JInJ2LLD-zHCkGrL1xqgiA</a><br>提取码：0814</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="vmware-3"><p>下载和傻瓜式安装完成后要检查电脑是否存在有虚拟网卡VMware1和VMware8，有就证明安装成功且在电脑上配置成功。下面有两种方式查看电脑是否有虚拟网卡。推荐使用方式二更加方便快捷哦。</p>
+<div class="tip success"><p>方式一</p>
+</div>
+
+<p>以win11为例,打开设置,选择网络和Internet,找到相关设置里的更多网络适配器选项,点击打开就行了,在里面可以查看是否有虚拟网卡。其他win版本可能会跟win11有一些差别，都是大同小异。</p>
+<details class="folding-tag" green><summary> 点击查看图片 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108151522520.png" alt="image-20230108151522520"></p>
+              </div>
+            </details>
+
+<div class="tip success"><p>方式二</p>
+</div>
+
+<p>如果上面的方式一没有找到所在的位置，可以使用命令行的方式更加方便快捷，具体操作为：同时按住电脑的win+r键在左下角会打开一个运行小窗口，在里面输入代码ncpa.cpl,最后按回车确定就会弹出方式一的页面了，推荐使用该方法，不管是在window哪个操作系统版本都适用（win7，win10，win11）。</p>
+<details class="folding-tag" green><summary> 点击查看图片 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108152053706.png" alt="image-20230108152053706"></p>
+              </div>
+            </details><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+<h1 id="CentOS的下载安装"><a href="#CentOS的下载安装" class="headerlink" title="CentOS的下载安装"></a>CentOS的下载安装</h1><p>为了方便找到该文件，最好下载完成放在自己指定的位置，后面还要使用它。</p>
+<div class="tabs" id="centos"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#centos-1">官网下载</button></li><li class="tab"><button type="button" data-href="#centos-2">百度网盘下载</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="centos-1"><p>点击<a target="_blank" rel="noopener" href="https://vault.centos.org/7.6.1810/isos/x86_64/">这里</a>去CentOS官网下载哦</p>
+<details class="folding-tag" green><summary> 点击查看图片 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108160556300.png" alt="image-20230108160556300"></p>
+              </div>
+            </details><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="centos-2"><p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1hmtNoDOeIxruehDeyI1Sdg">https://pan.baidu.com/s/1hmtNoDOeIxruehDeyI1Sdg</a><br>提取码：0814</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+<h1 id="Linux的部署"><a href="#Linux的部署" class="headerlink" title="Linux的部署"></a>Linux的部署</h1><p>打开软件VMware软件，点击创建新的虚拟机安装下面图片就行操作哦！！！</p>
+<details class="folding-tag" blue><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <div class="fj-gallery"><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108161628463.png" alt="image-20230108161628463"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108162341154.png" alt="image-20230108162341154"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108162536849.png" alt="image-20230108162536849"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108162728593.png" alt="image-20230108162728593"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108162917593.png" alt="image-20230108162917593"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108163506808.png" alt="image-20230108163506808"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108164239536.png" alt="image-20230108164239536"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108164555177.png" alt="image-20230108164555177"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108164740120.png" alt="image-20230108164740120"></p>          </div>
+              </div>
+            </details>
+<h1 id="Final-Shell软件安装"><a href="#Final-Shell软件安装" class="headerlink" title="Final Shell软件安装"></a>Final Shell软件安装</h1><p>下载这个Final Shell目的是进行远程连接Linux，首先要去官网下载第三方软件Final Shell，才能进行远程连接，原理是用到SSH获取IP地址进行远程连接哦！！！</p>
+<div class="note orange icon-padding flat"><i class="note-icon fas fa-battery-half"></i><p>下载第三方软件Final Shell</p>
+</div>
+<div class="tabs" id="final-shell"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#final-shell-1">说明</button></li><li class="tab"><button type="button" data-href="#final-shell-2">Final Shell的下载</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="final-shell-1"><p>使用第三方软件FinalShell来远程连接到Linux操作系统，并且可以通过Final Shell来操作Linux系统。</p>
+<p>解释一下为什么不用VMware软件来操作Linux系统，原因如下</p>
+<p>1.当我们对内容的复制和粘贴时，跨越VMware并不方便</p>
+<p>2.当我们要文件上传和下载时，也是一样的不方便</p>
+<p>3.还有一些其他的操作也是一样。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="final-shell-2"><p>点击<a target="_blank" rel="noopener" href="http://www.hostbuf.com/t/988.html">这里</a>进入Final Shell官网下载哦！！！下载傻瓜式安装就好了，注意安装这个软件时，在中途要按照一个依赖Winpcap(同样时傻瓜式按照，默认就好)，点击确定就行了，它会自己帮你按照好，这样就完成啦！！！按照好后会自动打开Final Shell官网和Final Shell软件哦！！!</p>
+<details class="folding-tag" blue><summary> 点击查看官网图片 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108171104762.png" alt="image-20230108171104762"></p>
+              </div>
+            </details>
+
+<details class="folding-tag" blue><summary> 点击查看FinalShell软件 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108171937894.png" alt="image-20230108171937894"></p>
+              </div>
+            </details><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+<div class="note orange icon-padding flat"><i class="note-icon fas fa-battery-half"></i><p>连接Linux系统</p>
+</div>
+<p>用到两个第三方软件（VMware和Final Shell）</p>
+<div class="tabs" id="ssh连接"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#ssh连接-1">VMware软件</button></li><li class="tab"><button type="button" data-href="#ssh连接-2">FinalShell</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="ssh连接-1"><p>打开VMware软件，记得要把Linux系统进行开机哦，在Linux系统的主界面里鼠标点击右键，选择Open Terminal，就是打开Linux系统的终端，输入命令ifconfig，回车就可以获取到IP地址啦！！！</p>
+<details class="folding-tag" blue><summary> 点击查看图片 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108173127368.png" alt="image-20230108173127368"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108173325824.png" alt="image-20230108173325824"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108173531157.png" alt="image-20230108173531157"></p>
+              </div>
+            </details><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="ssh连接-2"><p>打开Final Shell软件，建立SSH连接，用到刚刚获取的IP地址。看图操作！</p>
+<details class="folding-tag" blue><summary> 点击查看图片 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108185549911.png" alt="image-20230108185549911"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108185814512.png" alt="image-20230108185814512"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108190007443.png" alt="image-20230108190007443"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108190309650.png" alt="image-20230108190309650"></p>
+              </div>
+            </details><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+<h1 id="配置WSL-Ubuntu-环境"><a href="#配置WSL-Ubuntu-环境" class="headerlink" title="配置WSL(Ubuntu)环境"></a>配置WSL(Ubuntu)环境</h1><div class="note orange icon-padding simple"><i class="note-icon fas fa-battery-half"></i><p>常见问题</p>
+</div>
+<p>提出问题：我们前面都已经完完整整的部署好了CentOS的Linux环境，为什么还要使用WSL来配置另一个Ubuntu的Linux环境呢？</p>
+<p>回答问题：因为使用WSL来配置部署Linux系统是以十分轻量化的，它操作起来十分简单，轻量，好用，省内存，还很方便，不需要下载什么第三方软件，win10和win11都自带了WSL哦，直接去开启就可以了，并且WSL还深受广大开发人员的喜爱，所以WSL是值得我们学习的。但我们主要还是先要学会传统的方式，再一步步过渡到使用WSL方式来减轻不必要的工作量，总的来说，相比使用传统的方式获取Linux系统，十分繁琐，要安装完整的虚拟机，比如要下载VMware软件来配置一个Linux环境。</p>
+<p>OK，废话不多说，现在我们开始操作。</p>
+<div class="note orange icon-padding simple"><i class="note-icon fas fa-battery-half"></i><p>开启电脑的WSL</p>
+</div>
+<div class="tabs" id="wsl"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#wsl-1">方式一</button></li><li class="tab"><button type="button" data-href="#wsl-2">方式二</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="wsl-1"><p>在电脑设置里面，点击应用，找到可选功能点击，在可选功能里找到更多Windows功能点击，弹出一个小窗口，在里面找到“适用于Linux的Windows子系统”和“虚拟机平台”，把它们两个勾选，最后点击确定，它要重启才行，重启一下就行啦！</p>
+<details class="folding-tag" green><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108193240027.png" alt="image-20230108193240027"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108193811986.png" alt="image-20230108193811986"></p>
+              </div>
+            </details><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="wsl-2"><p>这个方式通用win10和win11，按住键盘win+r键输入命令control,点击确定进入控制面板，</p>
+<p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108194543119.png" alt="image-20230108194543119"></p>
+<p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108194716115.png" alt="image-20230108194716115"></p>
+<p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108194837473.png" alt="image-20230108194837473"></p>
+<p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108195001178.png" alt="image-20230108195001178"></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+<div class="note orange icon-padding simple"><i class="note-icon fas fa-battery-half"></i><p>获取安装Ubuntu</p>
+</div>
+<p>打开电脑自带的微软商城Microsoft Store，在里面搜索Ubuntu软件进行获取安装，安装好了直接点击打开即可，根据提示输入相关的信息完成部署。</p>
+<details class="folding-tag" blue><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108200557195.png" alt="image-20230108200557195"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108201947452.png" alt="image-20230108201947452"></p>
+              </div>
+            </details>
+<div class="note orange icon-padding simple"><i class="note-icon fas fa-battery-half"></i><p>Windows终端窗口的使用</p>
+</div>
+<p>由于Ubuntu自带的运行窗口不太好用，建议使用win11自带的Windows终端窗口来代替Ubuntu自己的运行窗口，在任务栏里找到Windows图标右键它就能找到了，非常的简单，若是win10系统的话，则需要自己在去刚刚的微软商城Microsoft Store那里搜索Windows Terminal软件进行下载哦，由于上面演示了这么下载Ubuntu，这里就不演示这个了，这个下载跟Ubuntu一样，傻瓜式下载安装即可。然后打开刚刚提到的Windows终端窗口，进入设置界面，把默认配置文件改为Ubuntu，最后重启一下Windows终端窗口即可。</p>
+<details class="folding-tag" blue><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108203614014.png" alt="image-20230108203614014"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108204133849.png" alt="image-20230108204133849"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108204308064.png" alt="image-20230108204308064"></p>
+              </div>
+            </details>
+<div class="note orange icon-padding simple"><i class="note-icon fas fa-battery-half"></i><p>虚拟机快照</p>
+</div>
+<p>可以理解为存档，备份或者是版本1.0/2.0等等(我是这么理解的)，回到指定的某一个状态哦，不过这个是十分耗内存的哦。我们为什么要学习这个快照呢，因为由于我们可能会在操作Linux系统时会不小心误删了什么重要的文件之类的等等，我们就可以利用这个快照回到还没删除这个重要文件的版本。</p>
+<p>注意：这个快照是需要自己手动保存某个时间点进行快照存档的哦(最好是在Linux系统环境关机的情况下进行快照，这样效率会高一点哦)，不然会没有存档，也就回不去了，就要重装Linux系统了，这样会很麻烦。</p>
+<p>那我们该如何进行快照呢？下面就是具体的操作，在CentOS软件里操作(这个软件不能关掉的，让它在后台最小化运行就行了)</p>
+<details class="folding-tag" blue><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108210001644.png" alt="image-20230108210001644"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108210211487.png" alt="image-20230108210211487"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230108211022604.png" alt="image-20230108211022604"></p>
+              </div>
+            </details>
+<div class="note green icon-padding flat"><i class="note-icon fas fa-fan"></i><p>阶段总结</p>
+</div>
+<p>学习到这里，第一阶段的学习就结束啦，上面是我了解基本的Linux系统的相关概念，并随之安装部署了Linux操作系统环境在Windows电脑上，学习了两种方法(CentOS和Ubuntu)安装Linux操作系统环境，第一种是传统的方式来安装Linux系统，就是在电脑上安装了一款第三方软件VMware创建了一个虚拟机环境，然后再去CentOS官网里下载安装包，最后就是再VMware软件里创建新的虚拟机，在这个虚拟机环境中添加CentOS的安装包路径来配置部署好Linux系统环境，里面有一些细节的地方要注意的，然后考虑到VMware软件里面复制粘贴和对文件下载和上传等问题跨越VMware不方便，又下载了Final Shell这个第三方软件来代替VMware软件的输入命令窗口，以后就可以在Final Shell软件里写命令代码就行了，但要注意的是VMware软件不能关闭，可以最小化再后台运行，不然的话Final Shell软件将无法使用，他这个Final Shell辅组软件的原理是使用SSH远程连接Linux操作系统来执行相关的命令行代码，总之安装的步骤和软件相对较多，但能够学习到一些重要的知识和额外的一点知识，能够更进一步地了解该Linux环境，十分有用，虽然这种方式不是最优，最简，最方便的方式，但对我来说它是不可或缺的；第二种方式相对来说比较简单，它是使用win10/win11电脑自带的WSL来安装另一个同样是Linux系统环境的Ubuntu软件，这个软件是在微软商城Microsoft Store里下载安装的,安装十分简单，傻瓜式安装，下载完成打开后可能会出现错误窗口闪退的问题，自己也找到了解决方案，锻炼自己的解决问题的能力也是很重要的，特别是解决成功一个bug或者一件事情的那种feel真的不一样，感觉特有成就感😂，这样学习才有动力嘛，才不会这么的枯燥无趣 。</p>
+<h1 id="Linux基础命令"><a href="#Linux基础命令" class="headerlink" title="Linux基础命令"></a>Linux基础命令</h1><div class="note orange icon-padding disabled"><i class="note-icon fas fa-battery-half"></i><p>Linux目录结构说明</p>
+</div>
+<details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>Linux没有盘符这个概念,只有一个跟目录“/”,所有文件都在它之下。当要查找某个文件或者文件夹的路径时，是以“/”跟目录开头的，不同于Windows系统那样有几个盘符，例如：”D:\text\text.txt”(D盘下有一个text目录，text目录里有一个text.txt文件）,若再Linux系统里，则表示为：“/text/text.txt”。这就是两个不同操作系统的区别。</p>
+              </div>
+            </details>
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-bullhorn"></i><p>Linux命令基础格式</p>
+</div>
+<details class="folding-tag" ><summary> 点击查看命令格式 </summary>
+              <div class='content'>
+              <p>Linux有一个通用的格式（不管是什么命令，用于什么用途都可以）</p><p>command [-option] [parameter]</p><ul><li><p>command：命令本身</p></li><li><p>-option：[可选，非必填] 命令的一些选项，可以通过选项控制命令的行为细节</p></li><li><p>parameter：[可选，非必填] 命令的参数，多数用于命令的指向目标等</p></li></ul><p>示例：</p><p>ls -l/home/test，ls是命令本身，-l是选项，/home/test是参数</p><p>命令意思：一列表的形式，显示/home/test目录的所有内容</p><p>cp -r test1 test2，cp是命令本身，-r是选项，test1和test2是参数</p><p>命令意思：复制文件夹test1成为test2</p>
+              </div>
+            </details>
+<div class="note blue icon-padding disabled"><i class="note-icon fas fa-bullhorn"></i><p>Linux基础命令学习</p>
+</div>
+<h2 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h2><details class="folding-tag" ><summary> 点击查看ls命令 </summary>
+              <div class='content'>
+              <p>语法：ls [-a -l -h] [Linux路径]</p><p>说明：-a，-l，-h是可选选项，Linux路径是可选参数</p><p>标注：这些命令可以灵活变通运用哦！！！</p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 查看无参ls命令 </summary>
+              <div class='content'>
+              <p>若不使用可选的选项和参数，直接使用ls命令本身，表示以平铺的形式，列出当前工作目录(默认是用户的HOME目录,后面会通过cd来变换工作目录,工作目录不是固定的，注意Home目录不是根目录)下的内容，列出目录。</p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109132233646.png" alt="image-20230109132233646"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109132848388.png" alt="image-20230109132848388"></p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 查看ls /根目录 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109134307304.png" alt="image-20230109134307304"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109134504230.png" alt="image-20230109134504230"></p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 查看带有-a，-l，-h的选项 </summary>
+              <div class='content'>
+              <details class="folding-tag" ><summary> 说明 </summary>              <div class='content'>              <ul><li><p>-a: 表示all的意思，即列出全部文件（包含隐藏文件/文件夹），什么是隐藏文件/文件夹？只要是以”.”点开头的文件名就是，会自动隐藏的，所以只有通过-a命令才能将它们显示出来，而ls命令（不加任何参数）不能显示出来。</p></li><li><p>-l: 表示以列表（竖向排列）的形式来展示内容，并展示更多的信息。</p></li><li><p>-h:表示以易于阅读的形式，列出文件的大小，单位：K，M，G等等，并且-h选项必须要搭配-l一起使用。</p></li></ul><p>其中”-a“和”-l“可以组合使用，写法有很多，例如：“ls -a -l”，”ls -la“，”ls -la“等等都表示一样的作用(以列表的形式展示隐藏文件/文件夹）。</p>              </div>            </details><details class="folding-tag" ><summary> 点击查看图片操作 </summary>              <div class='content'>              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109141510870.png" alt="image-20230109141510870"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109142522018.png" alt="image-20230109142522018"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109143118093.png" alt="image-20230109143118093"></p>              </div>            </details>
+              </div>
+            </details>
+<h2 id="cd命令"><a href="#cd命令" class="headerlink" title="cd命令"></a>cd命令</h2><details class="folding-tag" ><summary> 说明 </summary>
+              <div class='content'>
+              <p>当Linux终端命令行打开的时候，会默认以用户的HOME目录作为当前的工作目录</p><p>我们可以通过cd（Change Directory）命令来改变当前的工作目录</p><p>语法：cd [Linux路径]</p><ul><li><p>cd命令无需选项，只有参数选择，表示要切到哪个目录下</p></li><li><p>cd命令行直接执行，若无写Linux路径该选项，默认会把工作目录改为用户的HOME目录哦！！！</p></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109144619667.png" alt="image-20230109144619667"></p>
+              </div>
+            </details>
+<h2 id="pwd命令"><a href="#pwd命令" class="headerlink" title="pwd命令"></a>pwd命令</h2><p>查看当前的工作目录，pwd（Print Work Directory）无参数无选项，可直接使用就行</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109145159625.png" alt="image-20230109145159625"></p>
+              </div>
+            </details>
+<h3 id="相对路径和绝对路径"><a href="#相对路径和绝对路径" class="headerlink" title="相对路径和绝对路径"></a>相对路径和绝对路径</h3><p>毋庸置疑，绝对路径是以根目录“/”为起点的，相对路径是以当前的目录为起点的，路径无需以“/”开头。</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109150412937.png" alt="image-20230109150412937"></p>
+              </div>
+            </details>
+<h3 id="特殊路径符"><a href="#特殊路径符" class="headerlink" title="特殊路径符"></a>特殊路径符</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <ul><li><p>“.”：表示当前目录，比如：cd./Desktop 表示切换到当前目录下的Desktop目录内，和cd Desktop效果一致。</p></li><li><p>”..”：表示上一级目录，比如：cd.. 即可切换到上一级目录，cd../..切换到上二级的目录</p></li><li><p>“~”：表示HOME目录，比如：cd~ 即可切换到HOME目录或cd~/Desktop，切换到HOME目录里的Desktop目录</p></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109173618627.png" alt="image-20230109173618627"></p>
+              </div>
+            </details>
+<h2 id="mkdir命令"><a href="#mkdir命令" class="headerlink" title="mkdir命令"></a>mkdir命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>通过mkdir(Make Directory)命令可以创建新的目录(文件夹)</p><p>语法：mkdir [-p] Linux路径</p><ul><li><p>Linux路径：即要创建的文件夹路径，可以写绝对路径，也可以写相对路径。</p></li><li><p>-p：可选，表示自动创建不存在的父目录，适用于创建连续多层级的目录。</p></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109175333722.png" alt="image-20230109175333722"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109191501303.png" alt="image-20230109191501303"></p>
+              </div>
+            </details>
+<h2 id="touch命令"><a href="#touch命令" class="headerlink" title="touch命令"></a>touch命令</h2><p>可以通过touch命令来创建文件</p>
+<p>语法：touch Linux路径(相对路径和绝对路径都行)</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109191712569.png" alt=""></p>
+              </div>
+            </details>
+<h2 id="cat命令"><a href="#cat命令" class="headerlink" title="cat命令"></a>cat命令</h2><p>cat命令是用来查看文件的内容，我先手动在yuan.txt文件里加入了”hello world“,使用cat命令来查看。</p>
+<p>语法：cat Linux路径</p>
+<p>Linux路径里可以写相对路径，绝对路径和特殊路径都行，cat命令里有一个参数且是必须要写的。</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109193033733.png" alt="image-20230109193033733"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109194145099.png" alt="image-20230109194145099"></p>
+              </div>
+            </details>
+<h2 id="more命令"><a href="#more命令" class="headerlink" title="more命令"></a>more命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>more命令同样是可以查看文件的内容，但和cat命令不同的是，cat是直接将全部内容显示出来的，而more比较人性化，如果内容比较多的话它可以将内容进行一页页展示出来，会分页的。</p><p>语法：more Linux路径</p><p>同cat命令一样只有一个参数且是必须的。</p><p>案例：Linux系统内置有一个文件，路径为：/etc/services，可以使用more命令来查看，more /etc/services</p><p>提醒：在查看的过程中可以通过空格来进行翻页，通过q退出查看。</p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109195607848.png" alt="image-20230109195607848"></p>
+              </div>
+            </details>
+<h2 id="cp命令"><a href="#cp命令" class="headerlink" title="cp命令"></a>cp命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>cp(copy)命令是可以用来复制文件/文件夹</p><p>语法：cp [-r] 参数1 参数2</p><ul><li><p>-r：可选，用于复制文件夹使用，用于递归</p></li><li><p>参数1：必选，写Linux路径，表示复制的文件/文件夹</p></li><li><p>参数2：必选，写Linux路径，表示要复制到的地方</p></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109201202531.png" alt="image-20230109201202531"></p>
+              </div>
+            </details>
+<h2 id="mv命令"><a href="#mv命令" class="headerlink" title="mv命令"></a>mv命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>mv(move)命令是移动文件/文件夹</p><p>语法：mv 参数1 参数2</p><ul><li><p>参数1：Linux路径，表示要移动的文件/文件夹</p></li><li><p>参数2：Linux路径，表示要移动去的地方，且可以把移动的文件/文件夹进行改名(在同级目录下），若移动到的地方无该名字的文件/文件夹，则会自动创建。</p></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109204306831.png" alt="image-20230109204306831"></p>
+              </div>
+            </details>
+<h2 id="rm命令"><a href="#rm命令" class="headerlink" title="rm命令"></a>rm命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>rm（remove）命令为删除文件/文件夹</p><p>语法：rm [-r -f] 参数1 参数2……参数N</p><ul><li><p>-r：用于删除文件夹</p></li><li><p>-f：表示强制删除，不会有提示是否确定删除的选项（普通用户删除内容不会弹出信息，只有root管理员删除内容才会有提示信息，所以一般的用户用不到-f选项。</p></li><li>参数1 参数2…….参数N：表示要删除的文件/文件夹路径，按照空格隔开，可以删除很多个，若删除的参数不存在会提示用户，但不会影响其他存在的文件/文件夹的删除。</li></ul><p>如何切换为管理员用户root呢？</p><ul><li><p>可以输入su -root 命令输入登录密码（就是登录Linux系统的用户密码）</p></li><li><p>输入exit命令，退回普通用户模式。</p></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109210415780.png" alt="image-20230109210415780"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109220624346.png" alt="image-20230109220624346"></p>
+              </div>
+            </details>
+<h3 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h3><details class="folding-tag" ><summary> 通配符* </summary>
+              <div class='content'>
+              <p>符号*表示通配符</p><p>慎用通配符*，若操作不当可能会造成极大的损失！！！</p><p>rm命令支持通配符，即匹配任何内容（包含空）</p><ul><li><p>test*，表示匹配任何以test开头的内容</p></li><li><p>*test，表示匹配任何以test结尾的内容</p></li><li><p><code>*test*</code>：表示匹配任何包含test的内容</p></li></ul>
+              </div>
+            </details>
+<h2 id="grep命令"><a href="#grep命令" class="headerlink" title="grep命令"></a>grep命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>grep命令可以从文件中通过关键字过滤文件行。</p><p>语法：grep [-n] 关键字 文件路径</p><ul><li>-n：可选，表示结果中显示匹配的行的行号。</li><li>关键字：必选，表示过滤的关键字，若带有空格或者特殊符号，建议使用“ ”把它们包裹起来</li><li>文件路径：必选，表示过滤文件内容的文件路径，可作为内容输入窗口(可以跟后面学到的管道符”|“搭配使用)</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109222335685.png" alt="image-20230109222335685"></p>
+              </div>
+            </details>
+<h3 id="管道符"><a href="#管道符" class="headerlink" title="管道符"></a>管道符</h3><p>含义：将管道符”|“左边的命令结果作为右边命令的输入。</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109225348825.png" alt="image-20230109225348825"></p>
+              </div>
+            </details>
+<h2 id="wc命令"><a href="#wc命令" class="headerlink" title="wc命令"></a>wc命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>wc命令是统计文件行数、单词数量等</p><p>语法：wc [-c -n -l -w] 文件路径</p><ul><li>-c：可选，统计bytes数量</li><li>-m：可选，统计字符数量</li><li>-l：可选，统计行数</li><li>-w：可选，统计单词数量</li><li>文件路径：必选，被统计的文件，可作为内容输入端口(可以跟前面学到的管道符”|“搭配使用)</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109224113383.png" alt="image-20230109224113383"></p>
+              </div>
+            </details>
+<h2 id="which命令"><a href="#which命令" class="headerlink" title="which命令"></a>which命令</h2><p>在前面学习了许多命令，其实它们的本体是一个个的二进制可执行程序。</p>
+<p>和Windows系统中的.exe文件时同一个意思。</p>
+<p>而which命令的作用是查看其他一系列命令的可执行程序文件存放在哪里</p>
+<p>语法：which 想要查询的命令</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109230320300.png" alt="image-20230109230320300"></p>
+              </div>
+            </details>
+<h2 id="find命令"><a href="#find命令" class="headerlink" title="find命令"></a>find命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>在Linux系统中，通过find命令去搜索指定的文件。</p><p>语法1：find 起始路径 -name ”被查找的文件名“。</p><ul><li>-name：按文件名字查询</li></ul><p>语法2：find 起始路径 -size +|-n[KMG]</p><ul><li>-size：按文件大小查询</li><li>+、-：表示大于和小于</li><li>KMG：表示单位大小，k小写字母表示kb，M表示MB，G表示GB。</li><li>示例①查找小于10kb的文件：find / -size -10k；</li><li>示例②查找大于100MB的文件：find /  -size +100M；</li><li>示例③查找大于1GB的文件：find / -size +1G</li></ul><p>为了能够有更好的展示效果，切换到root管理员权限（上面已经学习到了如何切换root权限，su - root命令）进行搜索更加清晰明了。</p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片查找 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109231456313.png" alt="image-20230109231456313"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109231652568.png" alt="image-20230109231652568"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109233007460.png" alt="image-20230109233007460"></p>
+              </div>
+            </details>
+<h2 id="echo命令"><a href="#echo命令" class="headerlink" title="echo命令"></a>echo命令</h2><p>echo命令作用是在命令行内输入指定的内容（若输入的内容有空格等特殊字符最好使用双引号“ ”把它们括起来）。</p>
+<p>echo命令可以结合反引号(`)来使用。具体看图片操作。</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109233545776.png" alt="image-20230109233545776"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109234019709.png" alt="image-20230109234019709"></p>
+              </div>
+            </details>
+<h3 id="重定向符"><a href="#重定向符" class="headerlink" title="重定向符"></a>重定向符</h3><p>重定向符：&gt;和&gt;&gt;。</p>
+<ul>
+<li><p><code>&gt;</code>：将左侧的命令结果覆盖写入到右侧指定的文件中去。</p>
+</li>
+<li><p><code>&gt;&gt;</code>：将左侧命令的结果，追加写入到指定的文件中去。</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230109235340238.png" alt="image-20230109235340238"></p>
+              </div>
+            </details>
+</li>
+</ul>
+<h2 id="tail命令"><a href="#tail命令" class="headerlink" title="tail命令"></a>tail命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>tail命令可以查看文章尾部的内容，跟踪文章的最新更改</p><p>语法：tail [-f -num] Linux路径</p><ul><li>Linux路径：表式被跟踪的文件路径</li><li>-f：表示持续跟踪</li><li>-num：表示查看尾部多少行，不填默认10行</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110000717776.png" alt="image-20230110000717776"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110001748382.png" alt="image-20230110001748382"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110001952632.png" alt="image-20230110001952632"></p>
+              </div>
+            </details>
+<h2 id="vi-vim命令"><a href="#vi-vim命令" class="headerlink" title="vi/vim命令"></a>vi/vim命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>vi/vim命令是用来编辑文件的。</p><p>语法：vi/vim 文件路径</p><ul><li>vim：兼容全部vi功能，一般都是使用vim命令。</li><li>如果文件路径不存在，那么vim命令会用于编辑新的文件</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110122308860.png" alt="image-20230110122308860"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110125541698.png" alt="image-20230110125541698"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110125656460.png" alt="image-20230110125656460"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110125835365.png" alt="image-20230110125835365"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110125937126.png" alt="image-20230110125937126"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110123915316.png" alt="image-20230110123915316"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110124204540.png" alt="image-20230110124204540"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110124443401.png" alt="image-20230110124443401"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110124907140.png" alt="image-20230110124907140"></p>
+              </div>
+            </details>
+<h2 id="su和exit命令"><a href="#su和exit命令" class="headerlink" title="su和exit命令"></a>su和exit命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>su（Switch User）命令用于账户切换的系统命令，</p><p>语法 su [-] [用户名]</p><ul><li>-：可选，表示在切换用户后加载环境变量，建立带上</li><li>用户名：可选，表示要切换的用户，默认是root管理员用户</li><li>切换用户后，可以通过exit命令退回上一个用户，也可以使用Ctrl+d来退回。</li><li>普通用户：无需密码直接切换，root转普通用户。root管理员用户权限最大。</li><li>root用户：需要密码才能切换到，普通用户转root。</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110132827157.png" alt="image-20230110132827157"></p>
+              </div>
+            </details>
+<h2 id="sudo命令"><a href="#sudo命令" class="headerlink" title="sudo命令"></a>sudo命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>当我们得知root管理员用户的登录密码时，可以通过su命令来登录root用户来获取最大的权限管理。但不建立长期使用root用户，避免带来系统损坏，可以使用sudo命令来为普通用户来授权，临时使用root管理员用户身份执行。</p><p>语法：sudo 其他命令</p><ul><li>在其他命令之前带上sudo命令即为这一条命令赋予临时的管理员用户root，进行用户授权登录</li><li>但是不是所有的用户都可以使用sudo命令来临时获取root权限，需要为普通用户配置sudo认证才行</li></ul><p>如何为普通用户配置sudo认证呢？</p><ul><li>先要用su命令登录到root用户，再使用命令visudo，它会自动打开vi编辑器（路径为：/etc/sudoers）</li><li>然后在文件最后添加代码：<code>user ALL=(ALL)  NOPASSWD：ALL</code>，其中user是你想要配置sudo认证的用户名，NOPASSWD：ALL意思是不用使用密码进行操作</li><li>最后通过wq命令保存（上面vi/vim命令里有学）</li><li>切换回普通用户user，命令前加上sudo命令均与root运行</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110143005321.png" alt="image-20230110143005321"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110143249712.png" alt="image-20230110143249712"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110143708538.png" alt="image-20230110143708538"></p>
+              </div>
+            </details>
+<h2 id="用户和用户组命令"><a href="#用户和用户组命令" class="headerlink" title="用户和用户组命令"></a>用户和用户组命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>用户组管理（需在root用户权限下执行命令）</p><ul><li>创建用户组<ul><li>groupadd 用户组名</li></ul></li><li><p>删除用户组</p><ul><li>groupdel 用户组名</li></ul></li><li><p>创建用户</p><ul><li>useradd [-g -d] 用户名<ul><li>-g：可选，指定用户的组，不指定会创建同名组并自动加入，若同名的组已经存在，则必选使用选项-g</li><li>-d：可选，指定用户的HOME路径，不指定则，HOME目录默认在：/home/用户名</li></ul></li></ul></li><li>删除用户<ul><li>userdel [-r] 用户名<ul><li>-r：可选，删除用户的HOME目录，不加-r，在删除用户时，HOME将被保存</li></ul></li></ul></li><li>查看用户所属的组<ul><li>id [用户名]<ul><li>用户名：可选，填写要查看的用户名，若不填，则查看自身</li></ul></li></ul></li><li>修改用户所属的组<ul><li>usermod -aG 用户组 用户名，将指定用户加入指定用户组</li></ul></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110155115215.png" alt="image-20230110155115215"></p>
+              </div>
+            </details>
+<h3 id="getent命令"><a href="#getent命令" class="headerlink" title="getent命令"></a>getent命令</h3><p>语法:getent passwd/group</p>
+<ul>
+<li>passed:    查看有哪些用户信息,展示的内容为:    用户名:密码(X):用户ID:组ID:描述信息(无用):HOME目录:执行终端(默认bash)</li>
+<li>group:   查看有哪些组,且展示相关信息为:    组名称:组认证(显示为x):组ID</li>
+</ul>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110155447122.png" alt="image-20230110155447122"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110155854479.png" alt="image-20230110155854479"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110155955940.png" alt="image-20230110155955940"></p>
+              </div>
+            </details>
+<h2 id="查看权限控制信息"><a href="#查看权限控制信息" class="headerlink" title="查看权限控制信息"></a>查看权限控制信息</h2><details class="folding-tag" ><summary> 认知权限信息 </summary>
+              <div class='content'>
+              <p>通过ls-l可以以列表的形式查看内容，并显示权限细节</p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110161646799.png" alt="image-20230110161646799"></p><ul><li>序号1：表示文件/文件夹的的权限控制信息</li><li>序号2：表示文件/文件夹所属用户</li><li>序号3：表示文件/文件夹所属用户组</li></ul><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110162056631.png" alt="image-20230110162056631"></p><p>举例：drwxr-xr-x，表示：（其中rwx意思分别为可读，可写，可执行，小横杠-表示无该权限）</p><ul><li>这是一个文件夹首字母为d，后面每三个字母字符为一组权限</li><li>紧接着的rwx是所属用户权限，可读可写可执行</li><li>再后r-x是所属用户组的权限，有可读，可执行权限，无可写权限</li><li>最后三个r-x是其他用户权限，有可读，可执行权限，无可写权限</li></ul><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110162620011.png" alt="image-20230110162620011"></p>
+              </div>
+            </details>
+<h2 id="chmod命令"><a href="#chmod命令" class="headerlink" title="chmod命令"></a>chmod命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>chmod命令用来修改文件/文件夹的权限信息的</p><p>注意：只有文件/文件夹的用户或者root用户才可以修改</p><p>语法：chmod [-r] 权限 文件/文件夹</p><ul><li>-r：操作文件夹时必选，对文件夹的全部内容应用同样的权限修改操作</li><li>权限：里面填写”u=写要修改的权限（rwx）,g=权限（rwl），o=权限（rwl)”<ul><li>u：用户本身</li><li>g：用户所属用户组</li><li>o：其他用户</li></ul></li><li>文件/文件夹：填写要修改的文件/文件夹的权限</li></ul><p>示例：</p><p>chmod u=rwx,g=rx,o=x hello.txt，意思是将hello.txt文件权限修改为用户自己（u）的权限rwx，该用户组（g）使用该文件的权限为rx，其他用户使用该文件的权限为x</p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110171244327.png" alt="image-20230110171244327"></p>
+              </div>
+            </details>
+<h3 id="权限的数字序号"><a href="#权限的数字序号" class="headerlink" title="权限的数字序号"></a>权限的数字序号</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>权限用3位数字来代表，第一位数字表示用户权限，第二位表示用户权限组，第三位表示其他用户权限</p><p>数字代表的功能如下（r=4，w=2，x=1），可以通过这个推出来其他的权限</p><ul><li>0：无任何权限，即—-</li><li>1：仅有x权限，即—x</li><li>2：仅有w权限，即-w-</li><li>3：有w和x权限，即-wx</li><li>4：仅有r权限，即r—</li><li>5：有r和x权限，即r-x</li><li>6：有r和w权限，即rw-</li><li>7：有全部权限，即rwx</li></ul><p>示例：chmod 751表示chmod rwx</p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110175242428.png" alt="image-20230110175242428"></p>
+              </div>
+            </details>
+<h2 id="chown命令"><a href="#chown命令" class="headerlink" title="chown命令"></a>chown命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>chown命令可以修改文件/文件夹的所属用户和用户组</p><p>普通用户无法修改所属为其他用户或组，所以此命令只适用于root用户执行</p><p>语法：chown [-R] [用户] [:] [用户组] 文件和文件夹</p><ul><li>-R：同chmod，对文件夹内全部内容应用相同规则</li><li>用户：修改所属用户</li><li>用户组：修改所属用户组</li><li>“:”：用于分隔用户和用户组，若只修改用户组，”:“左边的用户可以省略不写，只写右边的用户组就行</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110191453826.png" alt="image-20230110191453826"></p>
+              </div>
+            </details>
+<h1 id="Linux实用操作"><a href="#Linux实用操作" class="headerlink" title="Linux实用操作"></a>Linux实用操作</h1><h2 id="各类快捷键小技巧"><a href="#各类快捷键小技巧" class="headerlink" title="各类快捷键小技巧"></a>各类快捷键小技巧</h2><h3 id="ctrl-c"><a href="#ctrl-c" class="headerlink" title="ctrl+c"></a>ctrl+c</h3><details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p>作用：ctrl+c强制停止，使用了这个快捷键会在终端里显示^c这个符号</p><p>场景：Linux的某些程序的运行，如果想要强制停止它们，就可以使用，如：tail命令；又或者命令输入错误等情况，使用快捷键，退出当前的输入，重新输入。</p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110192513623.png" alt="image-20230110192513623"></p>
+              </div>
+            </details>
+<h3 id="ctrl-d"><a href="#ctrl-d" class="headerlink" title="ctrl+d"></a>ctrl+d</h3><details class="folding-tag" ><summary> 点击查看 </summary>
+              <div class='content'>
+              <p>ctrl+d退出或登出，或者退出某些特定程序的专属页面，但它不能用于退出vi/vim命令的编辑。</p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110192920182.png" alt="image-20230110192920182"></p>
+              </div>
+            </details>
+<h3 id="历史搜索"><a href="#历史搜索" class="headerlink" title="历史搜索"></a>历史搜索</h3><ul>
+<li><p><strong>history</strong></p>
+<p>history命令，查看历史输入过的命令</p>
+</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110205232230.png" alt="image-20230110205232230"></p>
+<ul>
+<li>！<br>  ！命令前缀，自动执行上一次匹配前缀的命令</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110205659060.png" alt="image-20230110205659060"></p>
+<ul>
+<li>ctrl+r<ul>
+<li>ctrl+r输入内容匹配历史命令</li>
+<li>如果搜到的内容是你所需要的直接按回车键执行</li>
+<li>如果搜到的内容不全是你需要的，可以按键盘左右键，可以得到这个命令且可以进行修改，再执行</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110210501427.png" alt="image-20230110210501427"></p>
+<h3 id="光标移动"><a href="#光标移动" class="headerlink" title="光标移动"></a>光标移动</h3><ul>
+<li>ctrl+a，跳到命令开头</li>
+<li>ctrl+e，跳到命令结尾</li>
+<li>ctrl+键盘左键，向左跳一个单词</li>
+<li>ctrl+键盘右键，向右跳一个单词</li>
+</ul>
+<h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><ul>
+<li>ctrl+l，可以清除终端内容</li>
+<li>clear命令，可以清除终端内容</li>
+</ul>
+<h2 id="安装程序命令"><a href="#安装程序命令" class="headerlink" title="安装程序命令"></a>安装程序命令</h2><p>列举出了CentOS和Ubuntu两个Linux系统环境的安装命令</p>
+<div class="tabs" id="安装命令"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#安装命令-1">yum</button></li><li class="tab"><button type="button" data-href="#安装命令-2">apt</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="安装命令-1"><p>yum是CentOS的安装程序命令</p>
+<details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>yum：RPM包软件管理器，用于自动化按照配置Linux软件，并可以自动解决依赖问题</p><p>语法：yum [-y] [install | remove | search] 软件名称</p><ul><li>-y：自动确认，无需手动确定按照或者卸载过程</li><li>install：按照</li><li>remove：卸载</li><li>search：搜索</li></ul><p>权限：yum命令需要管理员root权限哦，使用su命令切换到root，或使用临时root权限，命令为sudo，执行这些命令都需要联网才行</p><p>例子：使用yum命令安装wget程序，看图操作</p>
+              </div>
+            </details>
+
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110212910901.png" alt="image-20230110212910901"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110213114768.png" alt="image-20230110213114768"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110213515465.png" alt="image-20230110213515465"></p>
+              </div>
+            </details><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="安装命令-2"><p>apt是Ubuntu的安装程序命令</p>
+<p> 同CentOS的安装程序yum命令一样的语法，就是换了个命令，其他的都不变</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110215146362.png" alt="image-20230110215146362"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110215505735.png" alt="image-20230110215505735"></p>
+              </div>
+            </details><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+<h2 id="systemctl命令"><a href="#systemctl命令" class="headerlink" title="systemctl命令"></a>systemctl命令</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>Linux系统很多软件（内置或者第三方）均支持systemctl命令控制：启动、停止、开机自启，能被systemctl管理的软件，一般称之为服务</p><p>语法：systemctl start | stop | status | enable | disable 服务器</p><ul><li>start：启动</li><li>stop：关闭</li><li>status：查看状态</li><li>enable：开启开机自启</li><li>disable：关闭开机自启</li></ul><p>系统内置的服务比较多，例如：</p><ul><li>NetWorkManager，主网络服务</li><li>network，副网络服务</li><li>firewalld，防火墙服务</li><li>sshd，ssh服务（Final Shell远程登录Linux就是使用的这个服务</li></ul><p>除了内置的服务外，部分第三方软件安装也可以以systemctl进行控制</p><ul><li><p>yum install -y ntp ，安装ntp软件（时间同步的软件）</p><p>可以通过ntp服务名，配合systemctl进行控制</p></li><li><p>yum install -y httpd，安装httpd服务软件</p><p>可以通过httpd服务名，配合systemctl进行控制</p></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230110222001133.png" alt="image-20230110222001133"></p>
+              </div>
+            </details>
+<h3 id="软连接ln命令"><a href="#软连接ln命令" class="headerlink" title="软连接ln命令"></a>软连接ln命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>在Linux系统中创建软连接,可以将文件/文件夹链接到其他位置,类似widows系统中的快捷方式</p><p>语法：ln -s 参数1 参数2</p><ul><li>-s：创建软连接</li><li>参数1：被链接的文件/文件夹</li><li>参数2：要链接去的目的地</li><li>最好使用绝对路径</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111123656535.png" alt="image-20230111123656535"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111131838652.png" alt="image-20230111131838652"></p>
+              </div>
+            </details>
+<h2 id="日期和时区"><a href="#日期和时区" class="headerlink" title="日期和时区"></a>日期和时区</h2><h3 id="date命令"><a href="#date命令" class="headerlink" title="date命令"></a>date命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>通过date命令可以在命令行中查看系统的时间</p><p>语法：date [-d] [+格式化字符串]</p><ul><li>-d：按照给定的字符串显示信息，一般用于日期计算，且-d还可以和格式化字符串一起使用哦<ul><li>year年</li><li>mouth月</li><li>day日</li><li>hour时间</li><li>Minute分钟</li><li>second秒</li><li>例子：date -d “+1 day” +%Y%m%d ，含义是显示后一天的日期，以此类推</li></ul></li><li>格式化字符串：通过给定的字符串标记，来控制显示的日期格式<ul><li>%Y：年</li><li>%y：年份的后两位数字（00-99）</li><li>%M：月份（01-12）</li><li>%d：日（01-31）</li><li>%H：小时（00-23）</li><li>%M：分钟（00-59）</li><li>%S：秒（00-60）</li><li>%s：自1970-01-01 00:00:00 UTC 到现在的秒数</li></ul></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111135014701.png" alt="image-20230111135014701"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111135815866.png" alt="image-20230111135815866"></p>
+              </div>
+            </details>
+<h3 id="ntp程序"><a href="#ntp程序" class="headerlink" title="ntp程序"></a>ntp程序</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>可以通过ntp程序来自动校准系统时间</p><p>直接使用学过的yum/apt（CentOS和Ubuntu）命令安装就行，例：CentOS系统下为：yum -y install ntp，</p><p>设置开机自启：使用学过的命令systemctl，systemctl start ntpd和systemctl enable ntpd，当ntpd启动后会定期帮助我们联网校准标准系统的时间，也可以手动校准（需要root权限），使用命令：ntpdate -u ntp.aliyun.com，该命令的含义是通过阿里云提供的服务网址配合ntpdate（安装ntp后会附带这个命令）命令自动校准。</p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111141314312.png" alt="image-20230111141314312"></p>
+              </div>
+            </details>
+<h2 id="IP地址和主机名"><a href="#IP地址和主机名" class="headerlink" title="IP地址和主机名"></a>IP地址和主机名</h2><h3 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>每一台联网的电脑都会有一个IP地址，用来和其他计算机就行通信</p><p>IP地址有V4和V6两个版本，其中V4是常用，V6很少用到</p><p>IPV4版本的地址格式是：a.b.c.d，其中abcd表示是数字0-255的数字，如：192.168.88.101,这是一个标准的ip地址</p><p>上面学习到了使用SSH远程连接Linux系统时要用到Linux系统的ip地址，使用ifconfig命令来查看Linux系统的ip地址（ip地址会变的），如果无法使用ifconfig命令可以通过yum命令下载安装net-tools程序解决，命令为yum -y install net-tools。</p><p>特殊的ip地址</p><ul><li>127.0.0.1：该ip地址是本机的意思</li><li>0.0.0.0：可以用来指代本机，可以在端口绑定中用来确定绑定关系，在一些ip地址限制中，表示所有ip地址的意思，如放行规则设置为0.0.0.0，表示允许任意ip访问</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111142529345.png" alt="image-20230111142529345"></p>
+              </div>
+            </details>
+<h3 id="主机名"><a href="#主机名" class="headerlink" title="主机名"></a>主机名</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>没一台电脑除了对外联络地址（ip地址外），还可以有一个名字，称为主机名</p><p>无论是Windows/Linux系统，都可以给系统设置主机名</p><p>使用hostname命令查看主机名</p><p>使用hostnamectl set-hostname 主机名，此命令可以修改主机名，修改时要使用root权限</p><p>查看已修改的主机名，需要重启/重新登录Final Shell才可以看到</p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111144318644.png" alt="image-20230111144318644"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111144535440.png" alt="image-20230111144535440"></p>
+              </div>
+            </details>
+<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>由于IP地址（一串数字）实在是难以记忆，就出现了域名解析这个概念，例如打开百度网址（百度IP为<code>14.215.177.39</code>），没有人会通过ip地址来访问吧，都是通过百度的域名<code>www.baidu.com</code>来访问百度网址，这个网址就是域名，域名解析的原理是通过域名来映射ip地址进行访问。我们可以试试直接使用百度的IP地址去访问百度也是可以的，直接在网址上输入百度ip搜索即可。</p><p>示例：访问<code>www.baidu.com</code>的流程是怎么样的？</p><p>电脑会现在本机里查看是否有记录该网址，Windows系统则查看”C:\Windows\System32\drivers\etc\hosts”这个文件，Linux系统查看”/etc/hosts”，若查看没有，则会联网去公开的DNS服务器（如114.114.114.114，8.8.8.8等）访问，DNS服务器的原理是可以通过域名来解析到对应的ip地址，最后在进行访问，所以我们就只需要记住百度的域名（比记百度的ip地址简单）就行了，若都没有查找到（就是在DNS服务器里并没有记录到该域名，或者说压根就没有该域名网址）则查找网址失败404状态码。</p><ul><li>C:\Windows\System32\drivers\etc\hosts：这个文件是可以自行修改的，配置自己需要的IP地址和域名解析即可，Linux系统里的这个文件也是一样，例如，配置Linux系统远程连接的使用到的SSH的IP地址，我们可以把这个IP地址的域名解析为自己Linux系统的主机名（我的Linux系统的主机名是centos，IP是192.168.132.134），即把”192.168.132.134 centos”这段代码加入hosts文件最后一行保存即可，记得要使用管理员的方式进行配置，不然不行（原因是没有权限）。</li></ul><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111145612324.png" alt="image-20230111145612324"></p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p>注意：下面配置的Linux的IP地址会变化的，过了一段时间或者重启时会变化的，再次使用该IP或者域名会连接不到，所以这是临时的域名和IP，接下来会学习到如何固定连接Linux系统的IP地址和域名，这样子过了一段时间断开连接了，再次访问时就不会访问不到了。</p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111152427690.png" alt="image-20230111152427690"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111152919855.png" alt="image-20230111152919855"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111153107936.png" alt="image-20230111153107936"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111153545588.png" alt="image-20230111153545588"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111153252699.png" alt="image-20230111153252699"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111153738783.png" alt="image-20230111153738783"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111153850724.png" alt="image-20230111153850724"></p>
+              </div>
+            </details>
+<h3 id="固定IP"><a href="#固定IP" class="headerlink" title="固定IP"></a>固定IP</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>提出问题：为什么需要固定IP地址呢？</p><ul><li><p>当前我们的虚拟机的Linux操作系统，其IP地址是通过DHCP服务获取的。</p></li><li><p>DHCP：动态获取IP地址，即每次重启设备后会获取一次，可能会导致IP地址频繁的变更</p></li><li>办公电脑IP地址变化无所谓，但是我们要远程连接到Linux系统，如果IP地址经常更换变化，我们就要频繁的修改配置变化，会很麻烦</li><li>在我们刚刚配置好的Linux系统的IP和域名为Linux系统的主机名的映射，如果频繁更换了IP地址，则也需要频繁修改配置好的映射关系</li></ul><p>解决方案：在VMware Workstation软件中配置固定的IP地址</p><ul><li><p>在VMware Workstation（或Fusion）中配置IP地址网关和网段（IP地址的范围）</p><ul><li>首先要把Linux系统关机，在主页面点击<code>编辑</code>选项，再选择<code>虚拟网络编辑器</code>选项，需要先在页面右下角开启管理员root模式才可以修改，然后在该页面内选中<code>VMnet8</code>选项，把下面的子网IP改为192.168.xxx.0，其中xxx可以自己自定义，子网掩码改为255.255.255.0（有些默认是这个的），再同一页面点击选项<code>NAT设置</code>选项，再新的页面把网关IP改为192.168.xxx.2，点击确定，退回之前的<code>虚拟网络编辑器</code>页面点击确定即可</li></ul><p><details class="folding-tag" ><summary> 点击查看图片操作 </summary></p><pre><code>        &lt;div class=&#39;content&#39;&gt;        &lt;p&gt;&lt;img src=&quot;https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111162134011.png&quot; alt=&quot;image-20230111162134011&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111162558284.png&quot; alt=&quot;image-20230111162558284&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111162658526.png&quot; alt=&quot;image-20230111162658526&quot;&gt;&lt;/p&gt;        &lt;/div&gt;      &lt;/details&gt;</code></pre><ul><li><p>在Linux系统中手动修改配置文件，固定IP地址，这里可以选择使用Final Shell软件修改（这个要确保Linux系统时开机状态的），也可以直接选择Vmware软件修改也行，下面是使用VMware软件进行修改的</p><ul><li><p>上面的步骤做完后，将Linux系统进行开机，开机后在Linux系统桌面点击右键，选择Open Terminal选项进入终端，输入命令vim /etc/sysconfig/network-scripts/ifcfg-ens33，vim命令操作之前已经学过了，不再讲了，点击确定进入编辑ens33文件，然后找到BOOTPROTO=”dhcp”，大概是文件内容的第4行，把它修改为BOOTPROTO=”static”，然后在最后添加代码IPADDR=”196.168.xxx.xxx”，第一个xxx：我上面是改为了88，根据自己改的修改，第二个xxx：自定义一个数字（0-254之间），以后这个就是固定的ILinux系统的P地址了，接着在其后面一行再添加一行代码：NETMASK=”255.255.255.0”，在后一行再添加代码：GATEWAY=”192.168.xxx.2”，xxx跟上面一样，我填的是88，最后在后一行再添加一行代码：DNS1=”192.168.xxx.2”，这个xxx跟上面一样的意思，然后wq保存退出，这样就修改成功了</p><details class="folding-tag" ><summary> 点击查看图片操作 </summary>            <div class='content'>            <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111165953625.png" alt="image-20230111165953625"></p>            </div>          </details></li><li><p>修改完成后，重启网卡，先把网卡停止，命令为：systemctl stop network，再通过systemctl start network，开启网卡，或者直接使用systemctl restart network命令这样就修改成功了，最后通过ip a/ifconfig命令查看是否修改成功就行了</p><details class="folding-tag" ><summary> 点击查看图片操作 </summary>            <div class='content'>            <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111175022271.png" alt="image-20230111175022271"></p>            </div>          </details></li></ul></li><li><p>上面的步骤都做完后，再去配置Linux系统的IP地址域名就行了，这样IP地址不会更换了，配置的文件是Windows系统下的文件，路径为C:\Windows\System32\drivers\etc\hosts，记得要保存，最后修改Final Shell软件SSH连接的IP地址为域名（其实不用写域名也可以的哦，直接写IP地址也行，只不过学了域名嘛，就用一下域名）就行啦！！！双击打开验证是否可以连接到就ok啦。</p><details class="folding-tag" ><summary> 点击查看图片操作 </summary>            <div class='content'>            <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111175617173.png" alt="image-20230111175617173"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111175947906.png" alt="image-20230111175947906"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111180213927.png" alt="image-20230111180213927"></p>            </div>          </details></li></ul></li></ul>
+              </div>
+            </details>
+<h2 id="网络请求和下载"><a href="#网络请求和下载" class="headerlink" title="网络请求和下载"></a>网络请求和下载</h2><h3 id="ping命令"><a href="#ping命令" class="headerlink" title="ping命令"></a>ping命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>ping命令检查网络服务器是否可连通状态</p><p>语法：ping [-c num] ip/主机名</p><ul><li>-c num：可选的，num检查的次数，若不加此选项，则无限次检查</li><li>ip/主机名：必选，被检查的ip/主机名的地址，若IP地址不存在，报Unreachable不可达信号</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111190010160.png" alt="image-20230111190010160"></p>
+              </div>
+            </details>
+<h3 id="wget命令"><a href="#wget命令" class="headerlink" title="wget命令"></a>wget命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>wget是非交互式的文件下载器，可以在命令行内下载网络文件</p><p>语法：wget [-b] url</p><ul><li>-b：可选，后台下载，会将日志写入当前的工作目录的wget-log文件</li><li>url：下载链接</li></ul><p>注意：即使是终止了下载，它也会在生成文件保存在当前目录下，只是这个文件并不完整，打开不了等问题</p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111192644538.png" alt="image-20230111192644538"></p>
+              </div>
+            </details>
+<h3 id="curl命令"><a href="#curl命令" class="headerlink" title="curl命令"></a>curl命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>curl命令可以发送http网络请求，可用于：下载文件和获取信息等</p><p>语法：curl [-O] url</p><ul><li>-O：用于下载文件，当url是下载链接时，可以使用此选项保存文件</li><li>url：要发起请求的网络地址</li></ul><p>例子：向cip.cc发起网络请求，它会返回你主机的公网IP地址</p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111193949530.png" alt="image-20230111193949530"></p>
+              </div>
+            </details>
+<h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>计算机程序之间的通讯，通过IP只能锁定计算机，但无法确定具体的程序，因此出现了端口的概念，通过端口可以找到计算机里的具体某个程序，确保了程序之间的通讯</p><p>Linux系统可以支持65535个端口，这6万个端口分为3类</p><ul><li>1~1023：公认端口，通常用于一些系统内置或知名程序的预留使用，如SSH服务远程连接Linux系统的22端口，HTTPS服务的443端口，非特殊需要不要占用这个范围内的端口</li><li>1024~49151：注册端口，通常可以随便使用，用于松散的绑定一些程序/服务</li><li>49152~65535：动态端口，通常不会固定绑定程序，而是当程序对外进行网络连接时，用于临时使用</li></ul><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111194733958.png" alt="image-20230111194733958"></p>
+              </div>
+            </details>
+<h3 id="nmap命令"><a href="#nmap命令" class="headerlink" title="nmap命令"></a>nmap命令</h3><p>可以通过nmap命令来查看端口占用情况，先要在Linux环境中安装该程序，使用yum/apt -y nmap</p>
+<p>语法：nmap 被查看的IP地址</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111200045767.png" alt="image-20230111200045767"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111200353189.png" alt="image-20230111200353189"></p>
+              </div>
+            </details>
+<h3 id="netstat命令"><a href="#netstat命令" class="headerlink" title="netstat命令"></a>netstat命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>netstat命令可以查看指定的端口的占用情况，先使用命令yum/apt 安装哦，yum -y install net-tools</p><p>语法：netstat -anp | grep 端口号，其中grep命令已经学过了，过滤命令”|“为管道符也学过了</p>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111201152549.png" alt="image-20230111201152549"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111201546136.png" alt="image-20230111201546136"></p>
+              </div>
+            </details>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><p>程序运行在操作系统中，是被操作系统所管理的，为管理运行的程序，每一个程序在运行的时候，便被操作系统注册为系统中的一个进程，并为每一个进程都分配一个独有的id，称为进程id（进程号）。</p>
+<h3 id="ps命令"><a href="#ps命令" class="headerlink" title="ps命令"></a>ps命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>ps命令用来查看Linux系统中的进程信息，这个命令可以灵活使用管道符”|”和grep等命令来一起运用使用的。</p><p>语法：ps [-e -f]</p><ul><li>-e：显示全部的进程</li><li>-f：以完全格式化的形式展示全部信息</li><li>常用的命令是ps -ef，列出全部进程的全部信息</li></ul><p>列表菜单的名称</p><ul><li>UID：进程所属的用户ID</li><li>PID：进程的进程号</li><li>PPID：进程的父ID</li><li>C：此进程CPU占有率（百分比）</li><li>STIME：进程的启动时间</li><li>TTY：启动此进程终端序号，如显示？，表示非终端启动</li><li>TIME：进程占用的CPU时间</li><li>CMD：进程对应的名称或启动连接或启动命令</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111202709982.png" alt="image-20230111202709982"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111202809936.png" alt="image-20230111202809936"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111203243897.png" alt="image-20230111203243897"></p>
+              </div>
+            </details>
+<h3 id="kill命令"><a href="#kill命令" class="headerlink" title="kill命令"></a>kill命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>kill命令可以关闭进程</p><p>语法：kill [-9] 进程ID</p><ul><li>-9：表示强制关闭进程，不使用此选项会向进程发送信号要求其关闭，但是是否关闭要看进程自身的处理机制</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111204318295.png" alt="image-20230111204318295"></p>
+              </div>
+            </details>
+<h2 id="主机状态监控"><a href="#主机状态监控" class="headerlink" title="主机状态监控"></a>主机状态监控</h2><h3 id="top命令"><a href="#top命令" class="headerlink" title="top命令"></a>top命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>top命令可以查看系统资源的占用情况，通过top命令查看CPU、内存使用情况，类似于Windows系统的任务管理器，默认5秒刷新一次，</p><p>下面的选项太多，就不一一操作图片展示了，自己多动手操作就完了！！！</p><p>语法：top [-p -d -c -n -b -i -u]</p><ul><li>-p：只显示某个进程的信息</li><li>-d：设置刷新时间，默认是5秒</li><li>-c：显示产生进程的完整命令</li><li>-n：指定刷新次数，刷新完会退出，例如：top -n 3</li><li>-b：以非交互非全屏模式运行，以批次的方式执行top，一般配合-n指定刷新次数来统计信息，将输出重定向到指定文件，比如top -b -n 3 &gt; /tmp/top.tmp</li><li>-i：不显示任何闲置（idle）或无用（zombie）的进程</li><li>-u：查找特定用户启动的进程</li><li>按键盘q键退出</li><li>ctrl+c快捷键也可以退出</li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111205105157.png" alt="image-20230111205105157"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111205234798.png" alt="image-20230111205234798"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111205838130.png" alt="image-20230111205838130"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111205746603.png" alt="image-20230111205746603"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111211034432.png" alt="image-20230111211034432"></p>
+              </div>
+            </details>
+<h3 id="df命令"><a href="#df命令" class="headerlink" title="df命令"></a>df命令</h3><p>使用df命令，可以查看硬盘的使用情况</p>
+<p>语法：df [-h]</p>
+<ul>
+<li>-h：以更加人性化的单位显示</li>
+</ul>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111211359368.png" alt="image-20230111211359368"></p>
+              </div>
+            </details>
+<h3 id="iostat命令"><a href="#iostat命令" class="headerlink" title="iostat命令"></a>iostat命令</h3><p>使用iostat命令查看CPU、磁盘的相关信息</p>
+<p>语法：iostat [-x] [num1] [num2]</p>
+<ul>
+<li>-x：显示更多信息</li>
+<li>num1：数字，刷新间隔</li>
+<li>num2：数字，刷新几次</li>
+</ul>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111212210166.png" alt="image-20230111212210166"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111212117359.png" alt="image-20230111212117359"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111212338456.png" alt="image-20230111212338456"></p>
+              </div>
+            </details>
+<h3 id="sar命令"><a href="#sar命令" class="headerlink" title="sar命令"></a>sar命令</h3><p>使用sar命令查看网络相关的统计（sar命令十分的复杂，这里仅简单用于统计网络）</p>
+<p>语法：sar -n DEV num1 num2</p>
+<ul>
+<li>-n：查看网络，DEV表示查看网络接口</li>
+<li>num1：刷新间隔（不填就表示查看1次结束）</li>
+<li>num2：查看次数（不填则查看无数次）</li>
+</ul>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111212849895.png" alt="image-20230111212849895"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111212940020.png" alt="image-20230111212940020"></p>
+              </div>
+            </details>
+<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><h3 id="env命令"><a href="#env命令" class="headerlink" title="env命令"></a>env命令</h3><p>使用env命令可以查看当前系统中记录的环境变量，会以键值对的形式展示出来，例如：USER=user，表示当前的操作用户为user。</p>
+<p>其中env命令查到的信息里有PATH的键值对，它的值</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111213450113.png" alt="image-20230111213450113"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111214124045.png" alt="image-20230111214124045"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111214158740.png" alt="image-20230111214158740"></p>
+              </div>
+            </details>
+<h3 id="符号"><a href="#符号" class="headerlink" title="$符号"></a>$符号</h3><p>$符号在Linux系统中用于取“变量”的值</p>
+<p>语法：$环境变量名</p>
+<p>例子：echo$PATH</p>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111214958189.png" alt="image-20230111214958189"></p>
+              </div>
+            </details>
+<h3 id="export命令"><a href="#export命令" class="headerlink" title="export命令"></a>export命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>Linux环境变量可以用户自行设置，其中分为：</p><ul><li>临时设置：语法：export 变量名=变量值</li><li>永久生效：<ul><li>针对当前用户生效，配置在当前用户的：~/.bashrc文件中</li><li>针对所有用户生效，配置在系统的：/etc/profile文件中</li><li>并通过语法：source 配置文件，进行立刻生效，后重新启动Final Shell生效</li></ul></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111215836226.png" alt="image-20230111215836226"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111221705862.png" alt="image-20230111221705862"></p>
+              </div>
+            </details>
+<h2 id="文件上传下载"><a href="#文件上传下载" class="headerlink" title="文件上传下载"></a>文件上传下载</h2><details class="folding-tag" ><summary> 点击查看 </summary>
+              <div class='content'>
+              <p>使用Final Shell软件工具，在Final Shell软件的主界面下有个视图窗体，提供了Linux文件系统视图，可以直接使用简单粗暴的方式来上传和下载</p><ul><li><p>下载：在视图中找到想要下载的文件，鼠标右键点击，选择下载选项，可直接下载，它会下载到桌面fsdownload目录(没有该目录会创建)里</p></li><li><p>上传：在Windows系统中找到想要上传的文件，直接使用鼠标按住左键把它拖进去Final Shell软件视图中去，或者跟下载一样,点击上传，Final Shell会自动同步到Linux虚拟机中</p><details class="folding-tag" ><summary> 点击查看图片操作 </summary>            <div class='content'>            <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230111224452480.png" alt="image-20230111224452480"></p>            </div>          </details></li></ul>
+              </div>
+            </details>
+<h3 id="rz、sz命令"><a href="#rz、sz命令" class="headerlink" title="rz、sz命令"></a>rz、sz命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>rz，sz命令分别是上传和下载的命令，使用rz、sz命令需要通过yum命令先安装lrzsz程序，命令为yum -y install lrzsz，安装依赖程序</p><ul><li>rz命令，语法：rz</li><li>sz命令，语法：sz 要下载的文件，文件会自动下载到Windows系统桌面的fsdownload文件夹中</li></ul><details class="folding-tag" ><summary> 点击查看图片操作 </summary>              <div class='content'>              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230112172806816.png" alt="image-20230112172806816"></p>              </div>            </details>
+              </div>
+            </details>
+<h2 id="压缩解压"><a href="#压缩解压" class="headerlink" title="压缩解压"></a>压缩解压</h2><details class="folding-tag" ><summary> 压缩格式说明 </summary>
+              <div class='content'>
+              <p>压缩格式</p><ul><li>zip格式：Linux、Windows、MasOS系统常用</li><li>7zip格式：Windows系统系统常用</li><li>rar格式：Windows系统常用</li><li>tar格式：Linux、MasOS系统常用</li><li>gzip格式：Linux、MasOS系统常用 </li></ul><p>在Windows系统中常用的软件如：winrar、bandizip等软件，都支持各类常见的压缩格式，Linux系统主要要学习的压缩格式为tar、gzip、zip三种压缩方式，完成文件的压缩和解压操作，压缩和解压的时候遇到同名的文件，会将同名文件覆盖，取名要谨慎！！！</p>
+              </div>
+            </details>
+<h3 id="tar命令"><a href="#tar命令" class="headerlink" title="tar命令"></a>tar命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>Linux系统常用的两种压缩格式，后缀分别是：</p><ul><li>.tar，称之为tarball，归档文件，即简单的将文件组装到一个.tar的文件内，并没有太多的文件体积的减少，仅仅是简单的封装</li><li>.gz，即使用gzip压缩算法将文件压缩到一个文件内，可以极大的减少压缩后的体积</li></ul><p>以上两种格式，使用tar命令均可以进行压缩和解压缩的操作</p><p>语法：tar [-c -v -x -f -z -C] 参数1 参数2…参数N</p><ul><li>-c：创建压缩文件，用于压缩模式</li><li>-v：显示压缩、解压过程，用于查看进度</li><li>-x：解压模式</li><li>-f：要创建的文件，或要解压的文件，-f选项必须在所有选项中位置处于最后一个</li><li>-z：gzip模式，不使用-z就是普通的tarball格式，若要使用该选项，一般放在选项的第一个</li><li>-C：选择解压的目的地，用于解压模式</li></ul><p>tar压缩的常用的一些组合：</p><ul><li><p>tar -cvf test.tar 1.txt 2.txt 3.txt </p><p>将1.txt 2.txt 3.txt压缩到test.tar文件内</p></li><li><p>tar -zcvf test.tar.gz 1.txt 2.txt 3.txt</p><p>将1.txt 2.txt 3.txt 压缩到test.tar.gz文件内，使用gzip模式</p></li></ul><p>tar解压的常用的一些组合：</p><ul><li><p>tar -xvf test.tar</p><p>解压test.tat文件，将文件解压到当前的目录下</p></li><li><p>tar -xvf test.tar -C /home/user</p><p>解压test.tar文件，将文件解压到指定目录下（/home/user）</p></li><li><p>tar -zxvf test.tar.gz -C /home/user</p><p>以Gzip模式解压test.tar.gz，将文件解压到指定目录（/home/user）</p></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230112211914499.png" alt="image-20230112211914499"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230112212936169.png" alt="image-20230112212936169"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230112213313652.png" alt="image-20230112213313652"></p>
+              </div>
+            </details>
+<h3 id="zip-unzip命令"><a href="#zip-unzip命令" class="headerlink" title="zip/unzip命令"></a>zip/unzip命令</h3><details class="folding-tag" ><summary> 点击查看说明 </summary>
+              <div class='content'>
+              <p>zip命令也可以压缩文件，将文件压缩为zip压缩包</p><p>语法：zip [-r] 参数1 参数2…参数N</p><ul><li>-r：被压缩的文件包含文件夹时，需要使用-r选项，和rm、cp等命令的-r选项的效果一样</li></ul><p>示例：</p><ul><li><p>zip test.zip a.txt b.txt c.txt</p><p>将a.txt、b.txt和c.txt文件压缩到test.zip文件内</p></li><li><p>zip -r test.zip a.txt b.txt test</p><p>将a.txt、b.txt文件和test文件夹压缩到test.zip文件内</p></li></ul><p>unzip命令也可以用来解压.zip文件</p><p>语法：unzip 参数 [-d]</p><ul><li>-d：指定要解压去的地方，同tar的-r选项，功能一样</li><li>参数：被解压的.zip压缩包文件</li></ul><p>示例：</p><ul><li><p>unzip test.zip</p><p>将test.zip文件解压到当前的目录</p></li><li><p>unzip test.zip -d /home/test</p><p>将test.zip文件解压到指定的目录下（/home/test)</p></li></ul>
+              </div>
+            </details>
+<details class="folding-tag" ><summary> 点击查看图片操作 </summary>
+              <div class='content'>
+              <p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230112214852460.png" alt="image-20230112214852460"></p><p><img src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/image-20230112220233597.png" alt="image-20230112220233597"></p>
+              </div>
+            </details>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>Linux Learn</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://ydg-0814.github.io/2023/01/07/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0/">https://ydg-0814.github.io/2023/01/07/Linux操作系统学习/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>YDG-0814</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2023-01-07</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2023-01-14</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/30%20(7).jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css" media="print" onload="this.media='all'"><script src="https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/01/15/Git%E5%AD%A6%E4%B9%A0/"><img class="prev-cover" src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/30%20(3).jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Git命令学习</div></div></a></div><div class="next-post pull-right"><a href="/2023/01/01/%E5%B8%B8%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/"><img class="next-cover" src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/waiguaMD.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">外挂标签</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#VMware%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text">VMware软件安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CentOS%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">CentOS的下载安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux%E7%9A%84%E9%83%A8%E7%BD%B2"><span class="toc-number">3.</span> <span class="toc-text">Linux的部署</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Final-Shell%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-number">4.</span> <span class="toc-text">Final Shell软件安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEWSL-Ubuntu-%E7%8E%AF%E5%A2%83"><span class="toc-number">5.</span> <span class="toc-text">配置WSL(Ubuntu)环境</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="toc-number">6.</span> <span class="toc-text">Linux基础命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#ls%E5%91%BD%E4%BB%A4"><span class="toc-number">6.1.</span> <span class="toc-text">ls命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cd%E5%91%BD%E4%BB%A4"><span class="toc-number">6.2.</span> <span class="toc-text">cd命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pwd%E5%91%BD%E4%BB%A4"><span class="toc-number">6.3.</span> <span class="toc-text">pwd命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%92%8C%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">6.3.1.</span> <span class="toc-text">相对路径和绝对路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E8%B7%AF%E5%BE%84%E7%AC%A6"><span class="toc-number">6.3.2.</span> <span class="toc-text">特殊路径符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mkdir%E5%91%BD%E4%BB%A4"><span class="toc-number">6.4.</span> <span class="toc-text">mkdir命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#touch%E5%91%BD%E4%BB%A4"><span class="toc-number">6.5.</span> <span class="toc-text">touch命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cat%E5%91%BD%E4%BB%A4"><span class="toc-number">6.6.</span> <span class="toc-text">cat命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#more%E5%91%BD%E4%BB%A4"><span class="toc-number">6.7.</span> <span class="toc-text">more命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cp%E5%91%BD%E4%BB%A4"><span class="toc-number">6.8.</span> <span class="toc-text">cp命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mv%E5%91%BD%E4%BB%A4"><span class="toc-number">6.9.</span> <span class="toc-text">mv命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rm%E5%91%BD%E4%BB%A4"><span class="toc-number">6.10.</span> <span class="toc-text">rm命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A9%E5%B1%95"><span class="toc-number">6.10.1.</span> <span class="toc-text">扩展</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#grep%E5%91%BD%E4%BB%A4"><span class="toc-number">6.11.</span> <span class="toc-text">grep命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%A1%E9%81%93%E7%AC%A6"><span class="toc-number">6.11.1.</span> <span class="toc-text">管道符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wc%E5%91%BD%E4%BB%A4"><span class="toc-number">6.12.</span> <span class="toc-text">wc命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#which%E5%91%BD%E4%BB%A4"><span class="toc-number">6.13.</span> <span class="toc-text">which命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#find%E5%91%BD%E4%BB%A4"><span class="toc-number">6.14.</span> <span class="toc-text">find命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#echo%E5%91%BD%E4%BB%A4"><span class="toc-number">6.15.</span> <span class="toc-text">echo命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%AE%9A%E5%90%91%E7%AC%A6"><span class="toc-number">6.15.1.</span> <span class="toc-text">重定向符</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tail%E5%91%BD%E4%BB%A4"><span class="toc-number">6.16.</span> <span class="toc-text">tail命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vi-vim%E5%91%BD%E4%BB%A4"><span class="toc-number">6.17.</span> <span class="toc-text">vi&#x2F;vim命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#su%E5%92%8Cexit%E5%91%BD%E4%BB%A4"><span class="toc-number">6.18.</span> <span class="toc-text">su和exit命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sudo%E5%91%BD%E4%BB%A4"><span class="toc-number">6.19.</span> <span class="toc-text">sudo命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84%E5%91%BD%E4%BB%A4"><span class="toc-number">6.20.</span> <span class="toc-text">用户和用户组命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#getent%E5%91%BD%E4%BB%A4"><span class="toc-number">6.20.1.</span> <span class="toc-text">getent命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6%E4%BF%A1%E6%81%AF"><span class="toc-number">6.21.</span> <span class="toc-text">查看权限控制信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chmod%E5%91%BD%E4%BB%A4"><span class="toc-number">6.22.</span> <span class="toc-text">chmod命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E7%9A%84%E6%95%B0%E5%AD%97%E5%BA%8F%E5%8F%B7"><span class="toc-number">6.22.1.</span> <span class="toc-text">权限的数字序号</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chown%E5%91%BD%E4%BB%A4"><span class="toc-number">6.23.</span> <span class="toc-text">chown命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="toc-number">7.</span> <span class="toc-text">Linux实用操作</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%84%E7%B1%BB%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="toc-number">7.1.</span> <span class="toc-text">各类快捷键小技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ctrl-c"><span class="toc-number">7.1.1.</span> <span class="toc-text">ctrl+c</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ctrl-d"><span class="toc-number">7.1.2.</span> <span class="toc-text">ctrl+d</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%86%E5%8F%B2%E6%90%9C%E7%B4%A2"><span class="toc-number">7.1.3.</span> <span class="toc-text">历史搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%89%E6%A0%87%E7%A7%BB%E5%8A%A8"><span class="toc-number">7.1.4.</span> <span class="toc-text">光标移动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%85%E5%B1%8F"><span class="toc-number">7.1.5.</span> <span class="toc-text">清屏</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F%E5%91%BD%E4%BB%A4"><span class="toc-number">7.2.</span> <span class="toc-text">安装程序命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#systemctl%E5%91%BD%E4%BB%A4"><span class="toc-number">7.3.</span> <span class="toc-text">systemctl命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E8%BF%9E%E6%8E%A5ln%E5%91%BD%E4%BB%A4"><span class="toc-number">7.3.1.</span> <span class="toc-text">软连接ln命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E5%8C%BA"><span class="toc-number">7.4.</span> <span class="toc-text">日期和时区</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#date%E5%91%BD%E4%BB%A4"><span class="toc-number">7.4.1.</span> <span class="toc-text">date命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ntp%E7%A8%8B%E5%BA%8F"><span class="toc-number">7.4.2.</span> <span class="toc-text">ntp程序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IP%E5%9C%B0%E5%9D%80%E5%92%8C%E4%B8%BB%E6%9C%BA%E5%90%8D"><span class="toc-number">7.5.</span> <span class="toc-text">IP地址和主机名</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#IP%E5%9C%B0%E5%9D%80"><span class="toc-number">7.5.1.</span> <span class="toc-text">IP地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E5%90%8D"><span class="toc-number">7.5.2.</span> <span class="toc-text">主机名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="toc-number">7.5.3.</span> <span class="toc-text">域名解析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BA%E5%AE%9AIP"><span class="toc-number">7.5.4.</span> <span class="toc-text">固定IP</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E5%92%8C%E4%B8%8B%E8%BD%BD"><span class="toc-number">7.6.</span> <span class="toc-text">网络请求和下载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ping%E5%91%BD%E4%BB%A4"><span class="toc-number">7.6.1.</span> <span class="toc-text">ping命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wget%E5%91%BD%E4%BB%A4"><span class="toc-number">7.6.2.</span> <span class="toc-text">wget命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#curl%E5%91%BD%E4%BB%A4"><span class="toc-number">7.6.3.</span> <span class="toc-text">curl命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3"><span class="toc-number">7.7.</span> <span class="toc-text">端口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#nmap%E5%91%BD%E4%BB%A4"><span class="toc-number">7.7.1.</span> <span class="toc-text">nmap命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#netstat%E5%91%BD%E4%BB%A4"><span class="toc-number">7.7.2.</span> <span class="toc-text">netstat命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B"><span class="toc-number">7.8.</span> <span class="toc-text">进程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ps%E5%91%BD%E4%BB%A4"><span class="toc-number">7.8.1.</span> <span class="toc-text">ps命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kill%E5%91%BD%E4%BB%A4"><span class="toc-number">7.8.2.</span> <span class="toc-text">kill命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7"><span class="toc-number">7.9.</span> <span class="toc-text">主机状态监控</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#top%E5%91%BD%E4%BB%A4"><span class="toc-number">7.9.1.</span> <span class="toc-text">top命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#df%E5%91%BD%E4%BB%A4"><span class="toc-number">7.9.2.</span> <span class="toc-text">df命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#iostat%E5%91%BD%E4%BB%A4"><span class="toc-number">7.9.3.</span> <span class="toc-text">iostat命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sar%E5%91%BD%E4%BB%A4"><span class="toc-number">7.9.4.</span> <span class="toc-text">sar命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">7.10.</span> <span class="toc-text">环境变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#env%E5%91%BD%E4%BB%A4"><span class="toc-number">7.10.1.</span> <span class="toc-text">env命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%A6%E5%8F%B7"><span class="toc-number">7.10.2.</span> <span class="toc-text">$符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#export%E5%91%BD%E4%BB%A4"><span class="toc-number">7.10.3.</span> <span class="toc-text">export命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD"><span class="toc-number">7.11.</span> <span class="toc-text">文件上传下载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#rz%E3%80%81sz%E5%91%BD%E4%BB%A4"><span class="toc-number">7.11.1.</span> <span class="toc-text">rz、sz命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%8E%8B"><span class="toc-number">7.12.</span> <span class="toc-text">压缩解压</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tar%E5%91%BD%E4%BB%A4"><span class="toc-number">7.12.1.</span> <span class="toc-text">tar命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#zip-unzip%E5%91%BD%E4%BB%A4"><span class="toc-number">7.12.2.</span> <span class="toc-text">zip&#x2F;unzip命令</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/30%20(7).jpeg')"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By YDG-0814</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-shuijue"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制链接</span></a><a class="rightMenu-item" href="javascript:rmf.switchReadMode();"><i class="fa fa-book"></i><span>阅读模式</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>图片查看</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换模式</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/node-snackbar/0.1.16/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'n5OcIQ5b0e3MpVPGsZ40Ww7E-gzGzoHsz',
+      appKey: 'n2lxrIX2i4EtgyORCF2u4DrT',
+      avatar: 'monsterid',
+      serverURLs: 'https://n5ociq5b.lc-cn-n1-shared.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/valine/1.4.16/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/pikaqiu.js"></script><script async src="//at.alicdn.com/t/c/font_3847728_krwtwev1hfe.js"></script><script src="/js/weather.js"></script><div class="aplayer no-destroy" data-id="7664620183" data-server="netease" data-mini="true" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><script defer src="/js/light.js"></script><script defer src="/js/universe.js"></script><script defer src="js/runtime.js"></script><script defer src="js/nav.js"></script><script async src="/js/title.js"></script><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script><script async data-pjax src="/js/newYear.js"></script><script async data-pjax src="/js/txmap.js"></script><script async src="/js/console.js"></script><script async src="/js/fps.js"></script><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script><script src="/js/share.js"></script><script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script><script defer src="/js/lunar.js"></script><script defer src="/js/day.js"></script><script src="/js/sun_moon.js" async></script><script type="text/javascript" src="https://cdn1.tianli0.top/npm/jquery@latest/dist/jquery.min.js"></script><script type="text/javascript" src="/js/rightmenu.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/canvas-nest.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/click-show-text.min.js" data-mobile="false" data-text="我落泪情绪零碎,周杰伦,地上断了翅的蝶,雾散之后的满月,原来爱跟心碎,都可以很细节,听夜风绕过几条街,秋天瘦了满地的落叶,于是又一整夜,感性的句子都枯萎,凋谢,我不想再写,随手撕下这一页,原来诗跟离别,可以没有结尾,憔悴后悔等等这些,于是我把诗折迭,邮寄出感觉,夹一束白玫瑰,你将爱退回,我不落泪,忍住感觉,分手在起风这个季节,哭久了会累,也只是别人的以为,冷的咖啡,我清醒着,一再续杯,我落泪,情绪零碎,你的世界,一幕幕纷飞,门外的蔷薇,带刺伤人的很直接,过去被翻阅,结局满天的风雪,我不想再写,随手撕下这一页,原来诗跟离别,可以没有结尾,憔悴后悔等等这些,于是我把诗折迭,邮寄出感觉,夹一束白玫瑰,你将爱退回,我不落泪,忍住感觉,分手在起风这个季节,哭久了会累,也只是别人的以为,冷的咖啡,我清醒着,一再续杯,我落泪,情绪零碎,你的世界,一幕幕纷飞,门外的蔷薇带刺伤人的很直接,过去被翻阅结局满天的风雪,YDG-0814" data-fontsize="15px" data-random="true" async="async"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/metingjs/dist/Meting.min.js"></script><script src="https://lib.baomitu.com/pjax/0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax","#web_bg"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.1" title=""><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用多线部署，主线路托管于Vercel" title=""><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2023/01/01/常用的一些外挂标签/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/waiguaMD.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-01-01</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2023/01/01/常用的一些外挂标签/&quot;);" href="javascript:void(0);" alt="">外挂标签</a><div class="blog-slider__text">自己常用的MarkDown的外挂标签</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2023/01/01/常用的一些外挂标签/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/12/12/SpringBoot项目常用依赖/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/0d0707667aed216e1b20a158e707000d.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-12-12</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/12/12/SpringBoot项目常用依赖/&quot;);" href="javascript:void(0);" alt="">SpringBoot</a><div class="blog-slider__text">springboot常用依赖</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/12/12/SpringBoot项目常用依赖/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/11/11/Java项目常用工具类/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/background.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-11</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/11/11/Java项目常用工具类/&quot;);" href="javascript:void(0);" alt="">Java Tool</a><div class="blog-slider__text">Java工具类</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/11/11/Java项目常用工具类/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/08/14/我的第一篇博客/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/01.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-08-14</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/08/14/我的第一篇博客/&quot;);" href="javascript:void(0);" alt="">我的第一篇博客</a><div class="blog-slider__text">我的第一篇博客</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/08/14/我的第一篇博客/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '700ms');
+    arr[i].setAttribute('data-wow-delay', '1ms');
+    arr[i].setAttribute('data-wow-offset', '200');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":180,"height":270},"mobile":{"show":true},"log":false});</script></body></html>

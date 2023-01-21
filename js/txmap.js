@@ -29,9 +29,9 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-    //经纬度：111.80482 , 22.16134 ----阳春市
-    //经纬度：112.98080 , 23.30675 ----广州工商学院
-    let dist = getDistance(111.80482, 22.16134, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+    //经纬度：113.27143 , 23.13534  ----阳春市
+    //经纬度：112.98192 , 23.30633  ----广州工商学院
+    let dist = getDistance(113.27143, 23.13534, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
     let pos = ipLoacation.result.ad_info.nation;
     let ip;
     let posdesc;

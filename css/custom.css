@@ -778,7 +778,7 @@ h6::before {
     }
     to {
         -webkit-transform: rotate(-1turn);
-        transform: rotate(-1turn);
+        transform: rotate(1turn);
     }
 }
 @keyframes ccc {
@@ -787,8 +787,8 @@ h6::before {
         transform: rotate(0deg);
     }
     to {
-        -webkit-transform: rotate(-1turn);
-        transform: rotate(-1turn);
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
     }
 }
 /* 设置风车颜色 */
