@@ -193,7 +193,7 @@
       <link href="/2022/08/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
       <url>/2022/08/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
       
-        <content type="html"><![CDATA[<div class="tip home"><p>欢迎来到我的博客!!!</p></div><div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>时间轴</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-08-14</p></div></div><div class='timeline-item-content'><p>今天是个值得纪念的日子<br>在今天我创建了属于自己的博客<br>从今天开始，我骑着我的小、小🚲踏上了博客之旅<br>在我这个博客里主要是记录我自己的一些学习过程和笔记，偶尔可能会更新一些学习之外的博客，例如我的兴趣爱好之类的，目前我还在求学阶段，在学校读书中，更新会很慢<br>对了，今天也是我的生日，祝我自己生日快乐🎂😂，其实这也是我为什么挑选在今天创建博客的原因之一，是不是觉得有点可笑😄<br>最后，若想更加了解我，可以看我的主页哦，有问题，都可以在评论区里说哦，或者加我QQ，也可以发邮件给我哦，我看到了会回复的🍭</p></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-以后</p></div></div><div class='timeline-item-content'><p>往后的日子里，请多多指教！！！</p></div></div></div>]]></content>
+        <content type="html"><![CDATA[<div class="tip home"><p>欢迎来到我的博客!!!</p></div><div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>时间轴</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2022-08-14</p></div></div><div class='timeline-item-content'><p>博客创建之日</p></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2023-以后</p></div></div><div class='timeline-item-content'><p>新的一年，加油往前冲，加油！！！</p></div></div></div>]]></content>
       
       
       <categories>
@@ -217,17 +217,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -239,11 +228,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/mouse.css"/>
-      <url>/css/mouse.css</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[body {    cursor:url(/mouse/default.cur),    default;    }a,img {    cursor:url(/mouse/pointer.cur),    default;    }]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/pikaqiu.css"/>
+      <url>/css/pikaqiu.css</url>
+      
+        <content type="html"><![CDATA[body::-webkit-scrollbar {    width: 0;}.neko {    width: 64px;    height: 64px;    background-image: url("https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/77.png");    position: absolute;    right: 32px;    background-repeat: no-repeat;    background-size: contain;    transform: translateX(50%);    cursor: pointer;    font-family: tzy;    font-weight: 600;    font-size: 16px;    color: #70DB93;    display: none;}.neko::after {    display: none;    width: 100px;    height: 100px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");    background-size: contain;    z-index: 9999;    position: absolute;    right: 50%;    text-align: center;    line-height: 100px;    top: -115%;}.neko.showMsg::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko:hover::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko.fontColor::after {    color: #333;}/** * @description: 滚动条样式  跟猫二选一 */@media screen and (max-width:992px) {    ::-webkit-scrollbar {        width: 8px !important;        height: 8px !important    }    ::-webkit-scrollbar-track {        border-radius: 2em;    }    ::-webkit-scrollbar-thumb {        background-color: rgb(255 255 255 / .3);        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);        border-radius: 2em    }    ::-webkit-scrollbar-corner {        background-color: transparent    }}]]></content>
       
     </entry>
     
@@ -262,10 +262,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/pikaqiu.css"/>
-      <url>/css/pikaqiu.css</url>
+      <link href="/css/mouse.css"/>
+      <url>/css/mouse.css</url>
       
-        <content type="html"><![CDATA[body::-webkit-scrollbar {    width: 0;}.neko {    width: 64px;    height: 64px;    background-image: url("https://cdn.staticaly.com/gh/YDG-0814/pic_bed@main/images/learn/77.png");    position: absolute;    right: 32px;    background-repeat: no-repeat;    background-size: contain;    transform: translateX(50%);    cursor: pointer;    font-family: tzy;    font-weight: 600;    font-size: 16px;    color: #70DB93;    display: none;}.neko::after {    display: none;    width: 100px;    height: 100px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");    background-size: contain;    z-index: 9999;    position: absolute;    right: 50%;    text-align: center;    line-height: 100px;    top: -115%;}.neko.showMsg::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko:hover::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko.fontColor::after {    color: #333;}/** * @description: 滚动条样式  跟猫二选一 */@media screen and (max-width:992px) {    ::-webkit-scrollbar {        width: 8px !important;        height: 8px !important    }    ::-webkit-scrollbar-track {        border-radius: 2em;    }    ::-webkit-scrollbar-thumb {        background-color: rgb(255 255 255 / .3);        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);        border-radius: 2em    }    ::-webkit-scrollbar-corner {        background-color: transparent    }}]]></content>
+        <content type="html"><![CDATA[body {    cursor:url(/mouse/default.cur),    default;    }a,img {    cursor:url(/mouse/pointer.cur),    default;    }]]></content>
       
     </entry>
     
@@ -350,17 +350,6 @@
     
     <entry>
       <title></title>
-      <link href="/js/nav.js"/>
-      <url>/js/nav.js</url>
-      
-        <content type="html"><![CDATA[document.addEventListener('pjax:complete', tonav);document.addEventListener('DOMContentLoaded', tonav);//响应pjaxfunction tonav() {    document.getElementById("name-container").setAttribute("style", "display:none");    var position = $(window).scrollTop();    $(window).scroll(function () {        var scroll = $(window).scrollTop();        if (scroll > position) {            document.getElementById("name-container").setAttribute("style", "");            document.getElementsByClassName("menus_items")[1].setAttribute("style", "display:none!important");        } else {            document.getElementsByClassName("menus_items")[1].setAttribute("style", "");            document.getElementById("name-container").setAttribute("style", "display:none");        }        position = scroll;    });    //修复没有弄右键菜单的童鞋无法回顶部的问题    document.getElementById("page-name").innerText = document.title.split(" | YDGの小破站")[0];}function scrollToTop() {    document.getElementsByClassName("menus_items")[1].setAttribute("style", "");    document.getElementById("name-container").setAttribute("style", "display:none");    btf.scrollToDest(0, 500);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/newYear.js"/>
       <url>/js/newYear.js</url>
       
@@ -383,10 +372,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
+      <link href="/js/nav.js"/>
+      <url>/js/nav.js</url>
       
-        <content type="html"><![CDATA[// var now=new Date;// function createtime(){//     now.setTime(now.getTime()+1e3);//     var e=new Date("08/14/2022 00:00:00"),//         t=Math.trunc(234e8+(now-e)/1e3*17),//         a=(t/1496e5).toFixed(6),//         o=new Date("08/14/2022 00:00:00"),//         n=(now-o)/1e3/60/60/24,r=Math.floor(n),//         i=(now-o)/1e3/60/60-24*r,s=Math.floor(i);//     1==String(s).length&&(s="0"+s);//     var d=(now-o)/1e3/60-1440*r-60*s,l=Math.floor(d);//     1==String(l).length&&(l="0"+l);//     var g=(now-o)/1e3-86400*r-3600*s-60*l,//         b=Math.round(g);1==String(b).length&&(b="0"+b);let c="";//     c = s < 18 && s >= 9 ? `<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br>// <div style="font-size:13px;font-weight:bold">//     小破站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒//     <i id="heartbeat" class='fas fa-heartbeat'></i>//     <br>//     🌠目前距离🌏 ${t} 千米，约为 ${a} 个天文单位🚀// </div>// ` : `<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'>//     <br>// <div style="font-size:13px;font-weight:bold">//     小破站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i>//     <br>//     🌠目前距离🌏 ${t} 千米，约为 ${a} 个天文单位🚀// </div>// `, document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = c);// }// setInterval((() => {//     createtime()// }), 1e3);var now = new Date();function createtime() {    var grt = new Date("08/14/2022 00:00:00");    now.setTime(now.getTime() + 250);    var days = (now - grt) / 1e3 / 60 / 60 / 24,        dnum = Math.floor(days),        hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,        hnum = Math.floor(hours);    1 == String(hnum).length && (hnum = "0" + hnum);    var minutes = (now - grt) / 1e3 / 60 - 1440 * dnum - 60 * hnum,        mnum = Math.floor(minutes);    1 == String(mnum).length && (mnum = "0" + mnum);    var seconds = (now - grt) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,        snum = Math.round(seconds);    1 == String(snum).length && (snum = "0" + snum);    let currentTimeHtml = "";    (currentTimeHtml =        hnum < 18 && hnum >= 9            ? ` 上课摸鱼中🐟... <img src='/images/svg/棒棒糖.svg' title='距离月入25k也就还差一个大佬带我~' height="20"> <br>  小破站居然运行了 ${dnum} 天  <span id='runtime'>  ${hnum} 小时   ${mnum} 分   ${snum} 秒  <i class='fas fa-heartbeat' style='color:red'></i>`            : ` 放学了冲冲冲🚲... <img src='/images/svg/心跳.svg' title='距离月入25k也就还差一个大佬带我~' height="20"> <br>  小破站居然运行了 ${dnum} 天  <span id='runtime'>  ${hnum} 小时   ${mnum} 分   ${snum} 秒 <i class='fas fa-heartbeat' style='color:red'></i>`),    document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = currentTimeHtml);}setInterval(() => {    createtime();}, 250);]]></content>
+        <content type="html"><![CDATA[document.addEventListener('pjax:complete', tonav);document.addEventListener('DOMContentLoaded', tonav);//响应pjaxfunction tonav() {    document.getElementById("name-container").setAttribute("style", "display:none");    var position = $(window).scrollTop();    $(window).scroll(function () {        var scroll = $(window).scrollTop();        if (scroll > position) {            document.getElementById("name-container").setAttribute("style", "");            document.getElementsByClassName("menus_items")[1].setAttribute("style", "display:none!important");        } else {            document.getElementsByClassName("menus_items")[1].setAttribute("style", "");            document.getElementById("name-container").setAttribute("style", "display:none");        }        position = scroll;    });    //修复没有弄右键菜单的童鞋无法回顶部的问题    document.getElementById("page-name").innerText = document.title.split(" | YDGの小破站")[0];}function scrollToTop() {    document.getElementsByClassName("menus_items")[1].setAttribute("style", "");    document.getElementById("name-container").setAttribute("style", "display:none");    btf.scrollToDest(0, 500);}]]></content>
       
     </entry>
     
@@ -405,21 +394,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/share.js"/>
-      <url>/js/share.js</url>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
       
-        <content type="html"><![CDATA[// 分享本页function share_() {    let url = window.location.origin + window.location.pathname    try {        // 截取标题        var title = document.title;        var subTitle = title.endsWith("| YDGの小破站🍭") ? title.substring(0, title.length - 14) : title;        navigator.clipboard.writeText('YDGの小破站🍭的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');        new Vue({            data: function () {                this.$notify({                    title: "成功复制分享信息🎉",                    message: "您现在可以通过粘贴直接跟小伙伴分享了！",                    position: 'top-left',                    offset: 50,                    showClose: true,                    type: "success",                    duration: 3000                });                // return { visible: false }            }        })    } catch (err) {        console.error('复制失败！', err);    }    // new ClipboardJS(".share", { text: function () { return '标题：' + document.title + '\n链接：' + url } });    // btf.snackbarShow("本页链接已复制到剪切板，快去分享吧~")}// 防抖function share() {    debounce(share_, 300);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
-      
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {    if (document.hidden) {        //离开当前页面时标签显示内容        document.title = '(´｡• ω •｡`)等你回来哦';        clearTimeout(titleTime);    } else {        //返回当前页面时标签显示内容        document.title = 'o(>ω<)o你回来啦，呐🍭';        //两秒后变回正常标题        // titleTime = setTimeout(function () {        //     document.title = OriginTitile;        // }, 2000);    }});]]></content>
+        <content type="html"><![CDATA[// var now=new Date;// function createtime(){//     now.setTime(now.getTime()+1e3);//     var e=new Date("08/14/2022 00:00:00"),//         t=Math.trunc(234e8+(now-e)/1e3*17),//         a=(t/1496e5).toFixed(6),//         o=new Date("08/14/2022 00:00:00"),//         n=(now-o)/1e3/60/60/24,r=Math.floor(n),//         i=(now-o)/1e3/60/60-24*r,s=Math.floor(i);//     1==String(s).length&&(s="0"+s);//     var d=(now-o)/1e3/60-1440*r-60*s,l=Math.floor(d);//     1==String(l).length&&(l="0"+l);//     var g=(now-o)/1e3-86400*r-3600*s-60*l,//         b=Math.round(g);1==String(b).length&&(b="0"+b);let c="";//     c = s < 18 && s >= 9 ? `<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br>// <div style="font-size:13px;font-weight:bold">//     小破站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒//     <i id="heartbeat" class='fas fa-heartbeat'></i>//     <br>//     🌠目前距离🌏 ${t} 千米，约为 ${a} 个天文单位🚀// </div>// ` : `<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'>//     <br>// <div style="font-size:13px;font-weight:bold">//     小破站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i>//     <br>//     🌠目前距离🌏 ${t} 千米，约为 ${a} 个天文单位🚀// </div>// `, document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = c);// }// setInterval((() => {//     createtime()// }), 1e3);var now = new Date();function createtime() {    var grt = new Date("08/14/2022 00:00:00");    now.setTime(now.getTime() + 250);    var days = (now - grt) / 1e3 / 60 / 60 / 24,        dnum = Math.floor(days),        hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,        hnum = Math.floor(hours);    1 == String(hnum).length && (hnum = "0" + hnum);    var minutes = (now - grt) / 1e3 / 60 - 1440 * dnum - 60 * hnum,        mnum = Math.floor(minutes);    1 == String(mnum).length && (mnum = "0" + mnum);    var seconds = (now - grt) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,        snum = Math.round(seconds);    1 == String(snum).length && (snum = "0" + snum);    let currentTimeHtml = "";    (currentTimeHtml =        hnum < 18 && hnum >= 9            ? ` 上课摸鱼中🐟... <img src='/images/svg/棒棒糖.svg' title='距离月入25k也就还差一个大佬带我~' height="20"> <br>  小破站居然运行了 ${dnum} 天  <span id='runtime'>  ${hnum} 小时   ${mnum} 分   ${snum} 秒  <i class='fas fa-heartbeat' style='color:red'></i>`            : ` 放学了冲冲冲🚲... <img src='/images/svg/心跳.svg' title='距离月入25k也就还差一个大佬带我~' height="20"> <br>  小破站居然运行了 ${dnum} 天  <span id='runtime'>  ${hnum} 小时   ${mnum} 分   ${snum} 秒 <i class='fas fa-heartbeat' style='color:red'></i>`),    document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = currentTimeHtml);}setInterval(() => {    createtime();}, 250);]]></content>
       
     </entry>
     
@@ -438,10 +416,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/universe.js"/>
-      <url>/js/universe.js</url>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
       
-        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {    if (document.hidden) {        //离开当前页面时标签显示内容        document.title = '(´｡• ω •｡`)等你回来哦';        clearTimeout(titleTime);    } else {        //返回当前页面时标签显示内容        document.title = 'o(>ω<)o你回来啦，呐🍭';        //两秒后变回正常标题        // titleTime = setTimeout(function () {        //     document.title = OriginTitile;        // }, 2000);    }});]]></content>
       
     </entry>
     
@@ -449,10 +427,21 @@
     
     <entry>
       <title></title>
-      <link href="/js/weather.js"/>
-      <url>/js/weather.js</url>
+      <link href="/js/share.js"/>
+      <url>/js/share.js</url>
       
-        <content type="html"><![CDATA[(function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));window.SeniverseWeatherWidget('show', {    flavor: "slim",    location: "WS0E9D8WN298",    geolocation: true,    language: "zh-Hans",    unit: "c",    theme: "dark",//light和dark    token: "67f7697a-14fa-4a54-a5c7-61a934d07791",    hover: "disabled",    container: "tp-weather-widget"})]]></content>
+        <content type="html"><![CDATA[// 分享本页function share_() {    let url = window.location.origin + window.location.pathname    try {        // 截取标题        var title = document.title;        var subTitle = title.endsWith("| YDGの小破站🍭") ? title.substring(0, title.length - 14) : title;        navigator.clipboard.writeText('YDGの小破站🍭的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');        new Vue({            data: function () {                this.$notify({                    title: "成功复制分享信息🎉",                    message: "您现在可以通过粘贴直接跟小伙伴分享了！",                    position: 'top-left',                    offset: 50,                    showClose: true,                    type: "success",                    duration: 3000                });                // return { visible: false }            }        })    } catch (err) {        console.error('复制失败！', err);    }    // new ClipboardJS(".share", { text: function () { return '标题：' + document.title + '\n链接：' + url } });    // btf.snackbarShow("本页链接已复制到剪切板，快去分享吧~")}// 防抖function share() {    debounce(share_, 300);}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/universe.js"/>
+      <url>/js/universe.js</url>
+      
+        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
       
     </entry>
     
@@ -464,6 +453,17 @@
       <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/weather.js"/>
+      <url>/js/weather.js</url>
+      
+        <content type="html"><![CDATA[(function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));window.SeniverseWeatherWidget('show', {    flavor: "slim",    location: "WS0E9D8WN298",    geolocation: true,    language: "zh-Hans",    unit: "c",    theme: "dark",//light和dark    token: "67f7697a-14fa-4a54-a5c7-61a934d07791",    hover: "disabled",    container: "tp-weather-widget"})]]></content>
       
     </entry>
     
@@ -492,22 +492,22 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>小图库</title>
+      <link href="/picture/index.html"/>
+      <url>/picture/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><a href="#" title="<div class="tabs" id="图库"><ul class="nav-tabs"></ul><div class="tab-contents"></div></div>">//</a>: # ()</p>]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>小图库</title>
-      <link href="/picture/index.html"/>
-      <url>/picture/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<p><a href="#" title="<div class="tabs" id="图库"><ul class="nav-tabs"></ul><div class="tab-contents"></div></div>">//</a>: # ()</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
