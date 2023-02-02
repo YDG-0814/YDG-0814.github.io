@@ -170,7 +170,9 @@
     font-size: 24px; /*一定要把字体调大点，否则效果惨不忍睹！*/
 }
 #tp-weather-widget{
-
+    position: absolute;
+    top: 80%;
+    right: 0.5%;
 }
 :root{
     --lyx-theme:#ed709b;/*我的主题色*/
