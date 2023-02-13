@@ -493,6 +493,7 @@ li.card-archive-list-item {
     padding: 1rem;
     position: relative;
     border-radius: 12px;
+    /*背景图例如兔年，为兔子*/
     background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/tunian.webp);
     background-size: cover;
     background-position: center;
