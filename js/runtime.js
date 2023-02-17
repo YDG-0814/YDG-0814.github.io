@@ -49,8 +49,8 @@ function createtime() {
     let currentTimeHtml = "";
     (currentTimeHtml =
         hnum < 18 && hnum >= 9
-            ? ` 上课摸鱼中🐟... <img src='/images/svg/棒棒糖.svg' title='距离月入25k也就还差一个大佬带我~' height="20"> <br>  小破站居然运行了 ${dnum} 天  <span id='runtime'>  ${hnum} 小时   ${mnum} 分   ${snum} 秒  <i class='fas fa-heartbeat' style='color:red'></i>`
-            : ` 放学了冲冲冲🚲... <img src='/images/svg/心跳.svg' title='距离月入25k也就还差一个大佬带我~' height="20"> <br>  小破站居然运行了 ${dnum} 天  <span id='runtime'>  ${hnum} 小时   ${mnum} 分   ${snum} 秒 <i class='fas fa-heartbeat' style='color:red'></i>`),
+            ? ` 上课摸鱼中🐟... <img src='/images/svg/棒棒糖.svg' title='距离月入25k也就还差一个大佬带我~' height="20"> <br>  小破站居然运行了 ${dnum} 天  <span id='runtime'>  ${hnum} 小时   ${mnum} 分   ${snum} 秒 `
+            : ` 放学了冲冲冲🚲... <img src='/images/svg/心跳.svg' title='距离月入25k也就还差一个大佬带我~' height="20"> <br>  小破站居然运行了 ${dnum} 天  <span id='runtime'>  ${hnum} 小时   ${mnum} 分   ${snum} 秒 `),
     document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
 setInterval(() => {

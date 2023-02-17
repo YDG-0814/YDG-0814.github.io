@@ -852,10 +852,10 @@ h6::before {
 }
 
 /* 页脚心跳动画 */
-#heartbeat {
-    color: red;
-    animation: iconAnimate 1s ease-in-out infinite;
-}
+/*#heartbeat {*/
+/*    color: red;*/
+/*    animation: iconAnimate 1s ease-in-out infinite;*/
+/*}*/
 
 /* 文章波浪css */
 .main-hero-waves-area {
